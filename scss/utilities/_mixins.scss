@@ -1,6 +1,17 @@
-@mixin h1 {
-    font-family: 'Yeseva One', cursive;
+@mixin main-text {
+    color: $dark;
+    font-family: $main-font;
     font-weight: 400;
-    font-size: 220px;
     line-height: 75%;
+}
+
+@mixin secondary-text {
+    color: $dark;
+    font-family: $secondary-font;
+    font-weight: 400;
+}
+
+@mixin no-margin {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

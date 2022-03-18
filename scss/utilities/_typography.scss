@@ -1,27 +1,19 @@
 //-----> $TYPOGRAPHY
 
 h1,h2,h3{
-    color: $dark;
-    font-family: $main-font;
-    font-weight: 400;
+    @include main-text;
 }
 p,a
 {
-    font-family: $secondary-font;
-    font-size: $fontsmall;
+    @include secondary-text;
 }
-a{
-    font-family: $main-font;
-    color: $dark;
-}
-p{
-    color: $dark;
-}
+
 
 h1{
-    @include h1
+
+    font-size: $fontbig;
 }
 
-h2{
+h2, .intro__text--paragraph{
     font-size: $fontmedium;
 }

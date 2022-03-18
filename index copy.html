@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
     <div id="home"></div>
@@ -29,30 +28,27 @@
 
         <!-- burger -->
 
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul class="overlay-content">
-                <li class="menu-items"><a href="#home">HOME</a></li>
-                <li class="menu-items"><a href="#about">ABOUT</a></li>
-                <li class="menu-items"><a href="/editor.html">SHOP</a></li>
-                <li class="menu-items"><a href="#stl">STL</a></li>
-                <li class="menu-items"><a href="#journal">JOURNAL</a></li>
-                <li class="menu-items"><a href="#faqs">FAQS</a></li>
-                <li class="menu-items"><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-        
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <div class="nav__right" >
+            <input class="hidden" id="burger" type="checkbox" />
 
-        <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-        </script>
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <!--<span></span>-->
+            </label>
+
+            <nav>
+                <ul>
+                    <li class="menu-items"><a href="#home">HOME</a></li>
+                    <li class="menu-items"><a href="#about">ABOUT</a></li>
+                    <li class="menu-items"><a href="/editor.html">SHOP</a></li>
+                    <li class="menu-items"><a href="#stl">STL</a></li>
+                    <li class="menu-items"><a href="#journal">JOURNAL</a></li>
+                    <li class="menu-items"><a href="#faqs">FAQS</a></li>
+                    <li class="menu-items"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </nav>
 
     <!-- header -->
@@ -67,6 +63,6 @@
         </div>
 
     </header>
-    <script src="/js/editor copy.js"></script>
+
 </body>
 </html>

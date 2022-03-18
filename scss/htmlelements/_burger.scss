@@ -37,13 +37,13 @@ body {
       span:first-child {
         opacity: 1;
         transform: rotate(405deg);
-        background-color: $light;
+        background-color: $dark;
       }
       span:last-child {
         opacity: 1;
         transform: rotate(-405deg);
         width: 100%;
-        background-color: $light;
+        background-color: $dark;
       }
     }
 
@@ -88,7 +88,7 @@ body {
             width: auto;
             //right: 20px;
             &:hover{
-              background-color: $light;
+              background-color: $dark;
               color:$light;
             } 
           }
