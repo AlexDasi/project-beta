@@ -1,0 +1,51 @@
+header{
+    flex:1;
+    height: 500px;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+
+h1 {
+    position: absolute;
+    width: 80vw;
+    height: 660px;
+    left: 20px;
+    top: 40vh;
+}
+
+.intro-text{
+    width: 210px;
+    margin-left: 15vw;
+    position: absolute;
+    top:350px;
+    align-items: flex-start;
+    z-index: 5;
+
+}
+
+
+.hero{
+    position: relative;
+    margin-left: 50vw;
+    top: 253px;
+    overflow: hidden;
+
+    &_top, &_bottom{
+        position: relative;
+        display: block;
+        width: 238px;
+        height: 357px;
+
+    }
+    &_bottom{ 
+        z-index: 2;
+        left: 53px;
+        top: -300px;
+    }
+    &_top{
+        z-index: 3;
+    }
+    
+}
+
+

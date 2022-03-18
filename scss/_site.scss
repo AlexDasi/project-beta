@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: $light;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+
+

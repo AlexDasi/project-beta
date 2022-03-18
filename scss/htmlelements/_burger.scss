@@ -1,0 +1,113 @@
+body {
+    
+    input + label {
+      position: relative;
+      height: 20px;
+      width: 15px; 
+      z-index: 5;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        background: $dark;
+        transition: .5s;
+      }
+
+      span:first-child {
+        top: 7px; 
+      }
+      span:last-child {
+        top: 12px; 
+        width: 50%;
+      }      
+    }
+    label:hover {
+      cursor: pointer;
+
+    }
+    input:checked + label { 
+      span {
+        opacity: 0;
+        top: 50%;
+      }
+      span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+        background-color: $light;
+      }
+      span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+        width: 100%;
+        background-color: $light;
+      }
+    }
+
+    input ~ nav {
+      position: fixed;
+      top: 0;
+      right: 20px;
+      width: auto;
+      height: $navheight;
+      //height: auto;
+      z-index: 3;
+      transition: .5s;
+      transition-delay: .2s;
+      //overflow: hidden;
+      > ul {
+        width: 100vw;
+        height: inherit;
+        text-align: center;
+        display: flex;
+        margin-top: 0px;
+        justify-content: flex-end;
+        align-items: center;
+        list-style-type: none;      
+        > li {
+          opacity: 0;
+          transition: .5s;
+          transition-delay: 0s;
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+            &:last-child {
+                margin-right: 30px;
+            }          
+        
+          > a {
+            text-decoration: none;
+            color: $dark;
+            //font-weight: $light;
+            font-family: $main-font;
+            font-size: 14;
+            display: block;
+            width: auto;
+            //right: 20px;
+            &:hover{
+              background-color: $light;
+              color:$light;
+            } 
+          }
+        }
+      }
+    }
+    
+    input:checked ~ nav { 
+      transition-delay: 0s;
+      > ul {
+        > li {
+          opacity: 1;
+          transition-delay: .5s;
+        }
+      }
+    } 
+
+  .hidden {
+        display: none;
+    }
+}
+

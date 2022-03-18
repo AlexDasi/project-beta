@@ -1,0 +1,27 @@
+//-----> $TYPOGRAPHY
+
+h1,h2,h3{
+    color: $dark;
+    font-family: $main-font;
+    font-weight: 400;
+}
+p,a
+{
+    font-family: $secondary-font;
+    font-size: $fontsmall;
+}
+a{
+    font-family: $main-font;
+    color: $dark;
+}
+p{
+    color: $dark;
+}
+
+h1{
+    @include h1
+}
+
+h2{
+    font-size: $fontmedium;
+}
