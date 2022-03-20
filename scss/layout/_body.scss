@@ -1,0 +1,68 @@
+
+.CTA{
+    display: flex;
+    background-color: $dark;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+
+    &__1{
+        &--image, &--text{
+            width: 50%;
+            padding: 6rem;
+        }
+        &--text{
+            & * {
+                @include no-margin;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__2{
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../content/images/CTA-bkg.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover;
+
+        &--title{
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+        }
+
+        &--fl{
+            position: relative;
+            top: -177px;
+            width: 30vw;
+            left: 10px;
+        }
+    }
+}
+
+
+.color__light{
+    color: $light;
+}
+
+.color__white{
+    color: $white;
+}
+
+.button{
+    border: none;
+    background-color: $light;
+    color: $dark;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $white;
+    }
+}

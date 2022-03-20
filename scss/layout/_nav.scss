@@ -7,8 +7,6 @@
     font-family: $main-font; 
     background-color: $light;
     z-index: 10;
-    position: fixed;
-    background-color: $light;
     top: 0;
     height: auto;
 
@@ -19,7 +17,6 @@
 
     &__left, &__right {
         display: flex;
-
     }
 
     a{

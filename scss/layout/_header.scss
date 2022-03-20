@@ -1,17 +1,19 @@
 header{
+    display: block;
     flex:1;
-    height: 500px;
+    height: 90vw;
     flex-basis: auto;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
-
-
 .intro__text{
+    display: block;
     position: absolute;
     width: 80vw;
+    height: 80vh;
     left: 20px;
-    top: 40vh;
+    top: 60vh;
     z-index: 2;
 
     &>h1, p{
@@ -20,19 +22,31 @@ header{
 
     &>p {
         position: relative;
-        left: 20px;
+        left: 60px;
+        top: 60px;
+        width: 55vw;
     }
 }
 
+//@include parallax-init;
 
 .hero{
-    position: relative;
+    //@include parallax(.3);
+    position: absolute;
     margin-left: 60vw;
-    top: 253px;
+    top: 150px;
     display: block;
     width: 15vh;
     height: 25vh;
     z-index: 0;
+}
+
+
+.fl-header{
+    position: relative;
+    top: -244px;
+    left: 277px;
+    z-index: -1;
 
 }
 

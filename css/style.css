@@ -3,6 +3,7 @@ h1, h2, h3 {
   font-family: "Yeseva One", cursive;
   font-weight: 400;
   line-height: 75%;
+  text-transform: uppercase;
 }
 
 p, a {
@@ -17,6 +18,14 @@ h1 {
 
 h2, .intro__text--paragraph {
   font-size: 4vw;
+}
+
+.p-small {
+  font-size: 20px;
+}
+
+.centered-text {
+  text-align: center;
 }
 
 * {
@@ -58,40 +67,147 @@ p {
 }
 
 header {
+  display: block;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 500px;
+  height: 90vw;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .intro__text {
+  display: block;
   position: absolute;
   width: 80vw;
+  height: 80vh;
   left: 20px;
-  top: 40vh;
+  top: 60vh;
   z-index: 2;
 }
 .intro__text > h1, .intro__text p {
   margin-top: 0px;
   margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
 .intro__text > p {
   position: relative;
-  left: 20px;
+  left: 60px;
+  top: 60px;
+  width: 55vw;
 }
 
 .hero {
-  position: relative;
+  position: absolute;
   margin-left: 60vw;
-  top: 253px;
+  top: 150px;
   display: block;
   width: 15vh;
   height: 25vh;
   z-index: 0;
+}
+
+.fl-header {
+  position: relative;
+  top: -244px;
+  left: 277px;
+  z-index: -1;
+}
+
+.CTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #01003C;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+.CTA__1--image, .CTA__1--text {
+  width: 50%;
+  padding: 6rem;
+}
+.CTA__1--text * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.CTA__2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../../content/images/CTA-bkg.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+.CTA__2--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+}
+.CTA__2--fl {
+  position: relative;
+  top: -177px;
+  width: 30vw;
+  left: 10px;
+}
+
+.color__light {
+  color: #E6F6B7;
+}
+
+.color__white {
+  color: #FFFFFF;
+}
+
+.button {
+  border: none;
+  background-color: #E6F6B7;
+  color: #01003C;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFFFFF;
 }
 
 .nav {
@@ -106,8 +222,6 @@ header {
   font-family: "Yeseva One", cursive;
   background-color: #E6F6B7;
   z-index: 10;
-  position: fixed;
-  background-color: #E6F6B7;
   top: 0;
   height: auto;
 }
@@ -152,8 +266,8 @@ header {
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%;
-  /* 25% from the top */
+  top: 18%;
+  /* 18% from the top */
   width: 100%;
   /* 100% width */
   text-align: center;
@@ -164,9 +278,10 @@ header {
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 9vw;
+  line-height: 75%;
+  font-family: "Yeseva One", cursive;
   color: #E6F6B7;
   display: block;
   /* Display block instead of inline */
@@ -177,7 +292,7 @@ header {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #F2F2F2;
 }
 
 /* Position the close button (top right corner) */
@@ -186,6 +301,10 @@ header {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+nav > span {
+  color: #01003C;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
