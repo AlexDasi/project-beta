@@ -3,13 +3,14 @@
     display: flex;
     background-color: $dark;
     align-items: center;
-    height: 80vh;
+    height: auto;
 
     &__1{
         flex-direction: row;
         &--image, &--text{
+            margin: 20px;
             width: 50%;
-            padding: 6rem;
+            padding: 20px;
         }
         &--text{
             & * {
@@ -26,6 +27,7 @@
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover;
+        height: 80vh;
 
         &--title{
             display: flex;

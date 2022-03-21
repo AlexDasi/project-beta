@@ -71,7 +71,9 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -ms-flex-wrap: wrap;
@@ -81,11 +83,9 @@ header {
 
 .intro__text {
   display: block;
-  position: absolute;
   width: 80vw;
-  height: 80vh;
-  left: 20px;
-  top: 60vh;
+  margin-left: 20px;
+  margin-top: 20%;
   z-index: 2;
 }
 .intro__text > h1, .intro__text p {
@@ -108,17 +108,27 @@ header {
 }
 
 .hero {
+  background-image: url(./../../content/images/hero-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   margin-left: 60vw;
   top: 150px;
   display: block;
-  width: 15vh;
-  height: 25vh;
-  z-index: 0;
+  width: 47vw;
+  height: 800;
+  z-index: -1;
+  overflow: hidden;
+}
+.hero > * {
+  overflow: hidden;
+  width: auto;
 }
 
 .fl-header {
   position: relative;
+  width: 22.5vw;
   top: -244px;
   left: 277px;
   z-index: -1;
@@ -132,7 +142,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: auto;
 }
 .CTA__1 {
   -webkit-box-orient: horizontal;
@@ -141,8 +151,9 @@ header {
           flex-direction: row;
 }
 .CTA__1--image, .CTA__1--text {
+  margin: 20px;
   width: 50%;
-  padding: 6rem;
+  padding: 20px;
 }
 .CTA__1--text * {
   margin-top: 0px;
@@ -172,6 +183,7 @@ header {
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
+  height: 80vh;
 }
 .CTA__2--title {
   display: -webkit-box;
