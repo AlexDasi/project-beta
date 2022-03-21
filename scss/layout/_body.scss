@@ -3,10 +3,10 @@
     display: flex;
     background-color: $dark;
     align-items: center;
-    flex-direction: column;
     height: 80vh;
 
     &__1{
+        flex-direction: row;
         &--image, &--text{
             width: 50%;
             padding: 6rem;
@@ -20,8 +20,8 @@
         }
     }
     &__2{
-        align-items: center;
         justify-content: center;
+        flex-direction: column;
         background-image: url('../../content/images/CTA-bkg.jpg');
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
