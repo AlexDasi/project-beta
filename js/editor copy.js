@@ -5,7 +5,7 @@ const TRAY = document.getElementById('js-tray-slide');
 
 var theModel;
 
-const MODEL_PATH = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/chair.glb";
+const MODEL_PATH = "../content/camisa.glb";
 
 var loaded = false;
 var cameraFar = 5;
@@ -214,14 +214,11 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhongMaterial( { color: 0xf1f1f1, shininess: 10 } );
+const INITIAL_MTL = new THREE.MeshPhongMaterial( { color: 0xff0000, shininess: 10 } );
 
 const INITIAL_MAP = [
   {childID: "back", mtl: INITIAL_MTL},
   {childID: "base", mtl: INITIAL_MTL},
-  {childID: "cushions", mtl: INITIAL_MTL},
-  {childID: "legs", mtl: INITIAL_MTL},
-  {childID: "supports", mtl: INITIAL_MTL},
 ];
 
 // Init the object loader
