@@ -256,6 +256,285 @@ header {
   text-decoration: none;
 }
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#c {
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.options {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.option {
+  border: 2px solid #01003C;
+  background-color: #F2F2F2;
+  margin-bottom: 3px;
+  padding: 10px;
+  height: 55px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.option:hover {
+  border: 2px solid #01003C;
+  background: #FFFFFF;
+  width: auto;
+}
+
+.option.--is-active {
+  border: 2px solid #01003C;
+  background-color: #E6F6B7;
+  width: auto;
+  cursor: default;
+}
+
+.option.--is-active:hover {
+  border: 2px solid #01003C;
+  background-color: #FFFFFF;
+}
+
+.option img {
+  height: 100%;
+  width: auto;
+  pointer-events: none;
+}
+
+.info {
+  padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.info p {
+  margin-top: 0;
+}
+
+.tray {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tray__slide {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  /*   transform: translateX(-50%);
+    animation: wheelin 1s 2s ease-in-out forwards; */
+}
+
+.tray__swatch {
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  height: 50px;
+  min-width: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+}
+
+.tray__swatch:nth-child(5n+5) {
+  margin-right: 20px;
+}
+
+.drag-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  width: 10em;
+  height: 10em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5em;
+  background: white;
+  position: absolute;
+}
+
+.drag-notice.start {
+  -webkit-animation: popout 0.25s 3s forwards;
+          animation: popout 0.25s 3s forwards;
+}
+
+@-webkit-keyframes popout {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes popout {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@-webkit-keyframes wheelin {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes wheelin {
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@media (max-width: 960px) {
+  .options {
+    top: 0;
+  }
+
+  .info {
+    padding: 0 1em 1em 0;
+  }
+
+  .info__message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .info__message p {
+    margin: 0;
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 720px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1em 1em;
+  }
+
+  .info__message {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 680px) {
+  .info {
+    padding: 1em 2em;
+  }
+
+  .info__message {
+    display: none;
+  }
+
+  .options {
+    bottom: 50px;
+  }
+
+  .option {
+    margin-bottom: 1px;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .option.--is-active {
+    border-right: 2px solid red;
+    width: 47px;
+  }
+
+  .option img {
+    height: 100%;
+    width: auto;
+    pointer-events: none;
+  }
+}
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */

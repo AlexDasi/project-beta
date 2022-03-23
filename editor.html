@@ -13,12 +13,30 @@
     <title>Camisola editor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
+<body>
+
+    <!-- These toggle the the different parts of the chair that can be edited, note data-option is the key that links to the name of the part in the 3D file -->
+<div class="options">
+    <div class="option --is-active" data-option="shirt">
+        <p>Fabric</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/legs.svg" alt=""/>
+    </div>
+    <div class="option" data-option="button"> 
+        <p>Buttons</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/cushions.svg" alt=""/>
+    </div>
+</div>
 
     <canvas id="c"></canvas>
+    <div class="controls">
+        <!-- This tray will be filled with colors via JS, and the ability to slide this panel will be added in with a lightweight slider script (no dependency used for this) -->
+         <div id="js-tray" class="tray">
+             <div id="js-tray-slide" class="tray__slide"></div>
+         </div>
+        </div>
     <!-- The main three.js file -->
     <script src='https://unpkg.com/three@0.127.0/build/three.js'></script>
 
@@ -27,6 +45,6 @@
 
     <!-- This is a simple to use extension for three.js that activates all the rotating, dragging and zooming controls we need for both mouse and touch, there isn't a clear CDN for this that I can find -->
     <script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
-    <script src="/js/editor copy.js"></script>
+    <script src="/js/editor.js"></script>
 </body>
 </html>
