@@ -39,40 +39,45 @@ body {
     width: 100%;
 }
 .options {
+    display: flex;
     position: absolute;
     right: 50px;
-    bottom: 50px;
+    bottom: 100px;
 }
 .option {
+    margin: -1px;
     border: 2px solid $dark;
     background-color: $light-grey;
     margin-bottom: 3px;
     padding: 10px;
     height: 55px;
-    width: auto;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &>*{
+        font-family: $tag-font;
+        margin: 5px;
+    }
 }
 .option:hover {
     border: 2px solid $dark;
     background: $white;
-    width: auto;
+    width: 150px;
 }
 .option.--is-active {
     border: 2px solid $dark;
     background-color: $light;
-    width: auto;
+    width: 150px;
     cursor: default;
 }
 .option.--is-active:hover {
     border: 2px solid $dark;
     background-color: $white;
 }
-.option img {
-    height: 100%;
-    width: auto;
+.option svg {
     pointer-events: none;
 }
 .info {
@@ -138,9 +143,6 @@ body {
     }
 }
 @media (max-width: 960px) {
-    .options {
-        top: 0;
-    }
     .info {
         padding: 0 1em 1em 0;
     }
@@ -159,35 +161,51 @@ body {
         justify-content: center;
         align-items: center;
         padding: 0 1em 1em;
+
+        &__message {
+            margin-bottom: 1em;
+        }
     }
-    .info__message {
-        margin-bottom: 1em;
-    }
+
 }
 @media (max-width: 680px) {
     .info {
         padding: 1em 2em;
+
+        &__message {
+            display: none;
+        }
     }
-    .info__message {
-        display: none;
-    }
+
     .options {
         bottom: 50px;
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        right: 0px;
     }
     .option {
-        margin-bottom: 1px;
+        margin-bottom: 0px;
         padding: 5px;
         height: 45px;
-        width: 45px;
+        width: 50%;
         display: flex;
+
+        &:hover {
+            width: 50%;
+            }
+
+        &.--is-active {
+            width: 50%;
+        }
+
+        & svg {
+            height: 100%;
+            width: auto;
+            pointer-events: none;
+        }
     }
-    .option.--is-active {
-        border-right: 2px solid red;
-        width: 47px;
-    }
-    .option img {
-        height: 100%;
-        width: auto;
-        pointer-events: none;
-    }
+
+
+
 }
