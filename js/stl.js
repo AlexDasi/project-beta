@@ -1,6 +1,6 @@
-const tagsTotales = ['urban', 'sober', 'monochromatic', 'tropical', 'colorful', 'beach', 'vintage', 'arty'];
+const tagsTotales = ['urban', 'sober', 'monochromatic', 'tropical', 'colorful', 'beach', 'vintage', 'arty', 'nighttime'];
 tagsTotales.forEach(function(tag) {
-    document.querySelector('footer').innerHTML += `<button class="filter">${tag}</button>`;
+    document.querySelector('.stl__filters').innerHTML += `<button class="stl__filters--tags">${tag}</button>`;
 })
 
 //let camisas = []
@@ -12,7 +12,7 @@ fetch('./js/camisas.json')
         camisas = data;
     })
 
-document.querySelectorAll('.filter').forEach(function(button) {
+document.querySelectorAll('.stl__filters--tags').forEach(function(button) {
     button.addEventListener('click', function() {
         button.classList.toggle('active');
 
@@ -30,8 +30,11 @@ function paintProducts(selectedFilter) {
         if (camisa.tags.some(function(tag) { return selectedFilter.includes(tag) })) {
             document.querySelector('.stl__list').innerHTML += 
             `
-            <p class="stl__name">${camisa.name}</p> 
-            <p class="stl__tags">${camisa.tags}</p> 
+            <li class="stl__block">
+                <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
+                <p class="stl__name">${camisa.name}</p> 
+                <p class="stl__tags">${camisa.tags}</p> 
+            </li>
             `;
         }
     });

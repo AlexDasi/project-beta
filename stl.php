@@ -16,7 +16,8 @@ include './phpelements/nav.php'
 ?>
 
 
-    <main>
+    <main class="stl">
+        <div  class="stl__filters"></div>
         <ul class="stl__list"></ul>
     </main>
     <footer>

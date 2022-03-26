@@ -1,26 +1,62 @@
 [
     { 
-        "image": "", 
-        "name": "Thomas", 
-        "tags": ["urban", "sober", "monochromatic"]
+        "image": "./content/images/stl/user 1.jpeg", 
+        "name": "Alice", 
+        "tags": ["urban", "sober", "nighttime"]
     },
     { 
-        "name": "Keith", 
-        "tags": ["tropical", "colorful", "daytime"]
+        "image": "./content/images/stl/user 2.jpeg", 
+        "name": "Aziz", 
+        "tags": ["tropical", "colorful", "nighttime"]
     },
     { 
+        "image": "./content/images/stl/user 3.webp", 
+        "name": "Su", 
+        "tags": ["beach", "daytime", "sober"]
+    },
+    { 
+        "image": "./content/images/stl/user 4.jpg", 
+        "name": "Joao", 
+        "tags": ["sober", "monochromatic", "urban"]
+    },
+    { 
+        "image": "./content/images/stl/user 5.jpg", 
+        "name": "Timo", 
+        "tags": ["urban", "beach", "monochromatic"]
+    },
+    { 
+        "image": "./content/images/stl/user 6.jpg", 
+        "name": "Sylvia", 
+        "tags": ["colorful", "tropical", "beach"]
+    },
+    { 
+        "image": "./content/images/stl/user 7.jpg", 
+        "name": "Marcus", 
+        "tags": ["vintage", "beach", "nighttime"]
+    },
+    { 
+        "image": "./content/images/stl/user 8.jpeg", 
         "name": "Andrew", 
-        "tags": ["urban", "sober", "monochromatic"]
+        "tags": ["monochromatic", "urban", "nighttime"]
     },
     { 
-        "name": "Katie", 
+        "image": "./content/images/stl/user 9.jpg", 
+        "name": "Josh", 
+        "tags": ["monochromatic", "sober", "nighttime"]
+    },
+    { 
+        "image": "./content/images/stl/user 10.jpg", 
+        "name": "Ray", 
         "tags": ["tropical", "colorful", "beach"]
     },
     { 
-        "name": "Alice", 
+        "image": "./content/images/stl/user 11.jpg", 
+        "name": "Shona", 
         "tags": ["urban", "vintage", "arty"]
     },
     { 
-        "name": "Miguel", 
-        "tags": ["urban", "tropical", "beach"]}
+        "image": "./content/images/stl/user 12.webp", 
+        "name": "Clifford", 
+        "tags": ["daytime", "tropical", "beach"]
+    }
 ]
