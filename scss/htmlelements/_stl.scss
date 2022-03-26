@@ -1,0 +1,16 @@
+.stl{
+
+    &__name, &__tags{
+        padding: 4px;
+        font-size: 16px;
+    }
+
+    &__name{
+        font-family: $main-font;
+    }
+
+    &__tags{
+        font-family: $tag-font;
+
+    }
+}

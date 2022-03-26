@@ -1,14 +1,16 @@
-const tagsTotales = ['formal', 'hawaiana', 'sport'];
+const tagsTotales = ['urban', 'sober', 'monochromatic', 'tropical', 'colorful', 'beach', 'vintage', 'arty'];
 tagsTotales.forEach(function(tag) {
     document.querySelector('footer').innerHTML += `<button class="filter">${tag}</button>`;
 })
 
-const camisas = [
-    { name: 'Camisa 1', tags: ['sport', 'hawaiana']},
-    { name: 'Camisa 2', tags: ['formal', 'hawaiana']},
-    { name: 'Camisa 3', tags: ['sport', 'hawaiana']},
-    { name: 'Camisa 4', tags: ['formal', 'hawaiana']},
-];
+//let camisas = []
+//const CamisasAsString = camisas.join 
+
+fetch('./js/camisas.json')
+    .then(function(data) { return data.json()})
+    .then(function(data) { 
+        camisas = data;
+    })
 
 document.querySelectorAll('.filter').forEach(function(button) {
     button.addEventListener('click', function() {
@@ -16,17 +18,22 @@ document.querySelectorAll('.filter').forEach(function(button) {
 
         const list = [];
         document.querySelectorAll('.active').forEach(function(buttonActive) {
-             list.push(buttonActive.textContent)
+            list.push(buttonActive.textContent)
         });
         paintProducts(list)
     })
 })
 
 function paintProducts(selectedFilter) {
-    document.querySelector('main').innerHTML = '';
+    document.querySelector('.stl__list').innerHTML = '';
     camisas.forEach(function (camisa) {
-        if (camisa.tags.includes(...selectedFilter)) {
-            document.querySelector('main').innerHTML += `<h1>${camisa.name}</h1>`;
+        if (camisa.tags.some(function(tag) { return selectedFilter.includes(tag) })) {
+            document.querySelector('.stl__list').innerHTML += 
+            `
+            <p class="stl__name">${camisa.name}</p> 
+            <p class="stl__tags">${camisa.tags}</p> 
+            `;
         }
     });
 }
+

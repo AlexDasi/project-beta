@@ -335,3 +335,13 @@ nav > span {
     right: 35px;
   }
 }
+.stl__name, .stl__tags {
+  padding: 4px;
+  font-size: 16px;
+}
+.stl__name {
+  font-family: "Yeseva One", cursive;
+}
+.stl__tags {
+  font-family: "Roboto Condensed", sans-serif;
+}

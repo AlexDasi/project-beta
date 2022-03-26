@@ -1,0 +1,26 @@
+[
+    { 
+        "image": "", 
+        "name": "Thomas", 
+        "tags": ["urban", "sober", "monochromatic"]
+    },
+    { 
+        "name": "Keith", 
+        "tags": ["tropical", "colorful", "daytime"]
+    },
+    { 
+        "name": "Andrew", 
+        "tags": ["urban", "sober", "monochromatic"]
+    },
+    { 
+        "name": "Katie", 
+        "tags": ["tropical", "colorful", "beach"]
+    },
+    { 
+        "name": "Alice", 
+        "tags": ["urban", "vintage", "arty"]
+    },
+    { 
+        "name": "Miguel", 
+        "tags": ["urban", "tropical", "beach"]}
+]

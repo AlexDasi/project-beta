@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main></main>
+    
+<?php
+
+include './phpelements/nav.php'
+
+?>
+
+
+    <main>
+        <ul class="stl__list"></ul>
+    </main>
     <footer>
     </footer>
-</body>
 <script src="./js/stl.js"></script>
+</body>
 </html>
