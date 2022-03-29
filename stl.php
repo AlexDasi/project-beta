@@ -15,11 +15,16 @@ include './phpelements/nav.php'
 
 ?>
 
+<div class="intro--text">
+<h2>Steal the look</h2>
+<p class="intro--paragraph">Discover your next favourite style or <a href="/editor.php">create your own.</a></p> 
+</div>
 
     <main class="stl">
         <div  class="stl__filters"></div>
         <ul class="stl__list"></ul>
     </main>
+
     <footer>
     </footer>
 <script src="./js/stl.js"></script>

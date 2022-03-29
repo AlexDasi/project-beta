@@ -31,12 +31,23 @@ function paintProducts(selectedFilter) {
             document.querySelector('.stl__list').innerHTML += 
             `
             <li class="stl__block">
-                <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
+                <div>
+                    <div onclick="changeClass()" class="heart"></div>  
+                    <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
+                </div>
                 <p class="stl__name">${camisa.name}</p> 
                 <p class="stl__tags">${camisa.tags}</p> 
             </li>
             `;
         }
     });
-}
+
+    // HEART BUTTON
+
+    function changeClass() {
+        var element = document.getElementsByClassName("heart");
+        element.classList.toggle("is-active");
+        }
+
+    }
 

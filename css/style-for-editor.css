@@ -24,6 +24,10 @@ h2, .intro__text--paragraph {
   font-size: 20px;
 }
 
+.p-medium {
+  font-size: 24px;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -512,6 +516,7 @@ header {
 }
 
 .nav {
+  position: fixed;
   padding: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

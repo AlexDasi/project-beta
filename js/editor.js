@@ -13,45 +13,31 @@ var activeOption = 'shirt';
 
 const colors = [
 {
-    texture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/wood_.jpg',
-    size: [2,2,2],
-    shininess: 60
-},
-{
-    texture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/fabric_.jpg',
-    size: [4, 4, 4],
+    texture: '../content/images/patterns/1.webp',
+    size: [1,1,1],
     shininess: 0
 },
 {
-    texture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/pattern_.jpg',
-    size: [8, 8, 8],
-    shininess: 10
-},
-{
-    texture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/denim_.jpg',
-    size: [3, 3, 3],
+    texture: '../content/images/patterns/2.webp',
+    size: [1,1,1],
     shininess: 0
 },
 {
-    texture: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/quilt_.jpg',
-    size: [6, 6, 6],
+  texture: '../content/images/patterns/3.jpeg',
+    size: [1,1,1],
     shininess: 0
 },
 {
-    color: '131417'  
+  texture: '../content/images/patterns/4.jpeg',
+    size: [1,1,1],
+    shininess: 0
 },
 {
-    color: '374047'  
+  texture: '../content/images/patterns/5.jpeg',
+    size: [1,1,1],
+    shininess: 0
 },
-{
-    color: '5f6e78'  
-},
-{
-    color: '7f8a93'  
-},
-{
-    color: '97a1a7'  
-},
+
 {
     color: 'acb4b9'  
 },

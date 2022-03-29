@@ -24,6 +24,10 @@ h2, .intro__text--paragraph {
   font-size: 20px;
 }
 
+.p-medium {
+  font-size: 24px;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -227,6 +231,7 @@ header {
 }
 
 .nav {
+  position: fixed;
   padding: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -358,6 +363,7 @@ nav > span {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 1020px;
+  z-index: 10;
 }
 .stl__filters--tags {
   margin: 10px;
@@ -386,6 +392,7 @@ nav > span {
 }
 .stl__block {
   margin: 10px;
+  margin-top: -70px;
 }
 .stl__img {
   width: 235px;
@@ -405,8 +412,51 @@ nav > span {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.intro--text {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.intro--text > * {
+  width: 1020px;
+  margin-left: 10px;
+}
+
 .active {
   background-color: #01003C;
   color: #E6F6B7;
   display: block;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  -webkit-transition: background-position 1s steps(28);
+  transition: background-position 1s steps(28);
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  position: relative;
+  top: 130px;
+  right: -200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.heart.is-active {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  background-position: -2800px 0;
 }

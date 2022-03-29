@@ -1,4 +1,4 @@
-.stl{
+.stl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12,6 +12,7 @@
         display: flex;
         justify-content: flex-start;
         width: 1020px;
+        z-index: 10;
     
         &--tags{
             margin: 10px;
@@ -39,6 +40,7 @@
 
     &__block{
         margin: 10px;
+        margin-top: -70px;
     }
 
     &__img{
@@ -63,8 +65,50 @@
     }
 }
 
+.intro--text{
+    font-size: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    &>*{
+        width: 1020px;
+        margin-left: 10px;
+    }
+}
+
 .active{
     background-color: $dark;
     color: $light;
     display: block;
+}
+
+
+
+// HEART BUTTON
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+
+    //Placement
+    position: relative;
+    top: 130px;
+    right: -200px;
+    transform: translate(-50%, -50%);
+    
+    &.is-active {
+        transition-duration: 1s;
+        background-position: -2800px 0;
+    }
 }
