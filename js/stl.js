@@ -32,7 +32,7 @@ function paintProducts(selectedFilter) {
             `
             <li class="stl__block">
                 <div>
-                    <div onclick="changeClass()" class="heart"></div>  
+                    <div id="heart" onclick="changeClass()" class="heart"></div>  
                     <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
                 </div>
                 <p class="stl__name">${camisa.name}</p> 
@@ -45,7 +45,7 @@ function paintProducts(selectedFilter) {
     // HEART BUTTON
 
     function changeClass() {
-        var element = document.getElementsByClassName("heart");
+        var element = document.getElementById("heart");
         element.classList.toggle("is-active");
         }
 

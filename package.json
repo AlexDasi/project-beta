@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.3",
+    "swiper": "^8.0.7"
   }
 }

@@ -47,12 +47,16 @@ include './phpelements/nav.php'
     </span>
 </section>
 
-    <!--horizontal scrol: https://medium.com/@lucas.eckman/ditch-the-carousel-creating-a-horizontal-scroll-effect-7a36c0f1c456-->
+    <!--horizontal scroll: https://medium.com/@lucas.eckman/ditch-the-carousel-creating-a-horizontal-scroll-effect-7a36c0f1c456-->
 
             <!--CTA-2-->
 <section>
-    <h2>Or just steal someone else's</h2>
-    <div id="root"></div>
+    <h2 class="stl__paragraph">Or just steal <br>someone else's</h2>
+    <ul class="stl__list stl__list--1 stl__list--home">
+    </ul>
+    <ul class="stl__list stl__list--2 stl__list--home">
+    </ul>
+    <h3 class="stl__promotext">FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA // FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION/@CAMISOLA/</h3>
 </section>
 
 <section class="CTA CTA__2">
@@ -71,6 +75,6 @@ include './phpelements/nav.php'
     
 </section>
 
-    <script src="/js/editor copy.js"></script>
+    <script src="/js/stl-home.js"></script>
 </body>
 </html>

@@ -17,7 +17,11 @@ h1 {
 }
 
 h2, .intro__text--paragraph {
-  font-size: 4vw;
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 22px;
 }
 
 .p-small {
@@ -389,10 +393,27 @@ nav > span {
           justify-content: flex-start;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.stl__list--1 {
+  margin-left: -200px;
+}
+.stl__list--2 {
+  margin-left: -900px;
+}
+.stl__list--home {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .stl__block {
   margin: 10px;
   margin-top: -70px;
+}
+.stl__block--home {
+  margin: 10px;
 }
 .stl__img {
   width: 235px;
@@ -400,6 +421,9 @@ nav > span {
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 10px;
+}
+.stl__img--home {
+  overflow: hidden;
 }
 .stl__name, .stl__tags {
   padding: 4px;
@@ -410,6 +434,12 @@ nav > span {
 }
 .stl__tags {
   font-family: "Roboto Condensed", sans-serif;
+}
+.stl__paragraph {
+  margin: 90px 0px 35px 90px;
+}
+.stl__promotext {
+  margin-bottom: 60px;
 }
 
 .intro--text {
