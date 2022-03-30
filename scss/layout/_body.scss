@@ -3,16 +3,21 @@
     display: flex;
     background-color: $dark;
     align-items: center;
+    justify-content: space-around;
     height: auto;
 
     &__1{
         flex-direction: row;
         &--image, &--text{
-            margin: 20px;
-            width: 50%;
+            width: 40vw;
             padding: 20px;
         }
+
+        &--image{
+            margin: 7vw;
+        }
         &--text{
+            margin: 0 11vw 0 9vw;
             & * {
                 @include no-margin;
                 margin-top: 20px;

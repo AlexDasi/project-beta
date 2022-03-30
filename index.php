@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -30,7 +30,7 @@ include './phpelements/nav.php'
             </svg>
         </span>
     <div class="hero">
-        <!--<img src="content/images/hero-image.jpg">-->
+        <img src="content/images/hero-image.jpg">
     </div>
             
 
@@ -49,15 +49,12 @@ include './phpelements/nav.php'
 
     <!--horizontal scroll: https://medium.com/@lucas.eckman/ditch-the-carousel-creating-a-horizontal-scroll-effect-7a36c0f1c456-->
 
-            <!--STEAL THE LOOK-->
-<section>
-    <h2 class="stl__paragraph">Or just steal <br>someone else's</h2>
-    <ul class="stl__list stl__list--1 stl__list--home">
-    </ul>
-    <ul class="stl__list stl__list--2 stl__list--home">
-    </ul>
-    <h3 class="stl__promotext">FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA // FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION/@CAMISOLA/</h3>
-</section>
+
+<?php
+
+include './phpelements/stl-home.php'
+
+?>
 
             <!--CTA-2-->
 <section class="CTA CTA__2">
@@ -74,20 +71,22 @@ include './phpelements/nav.php'
 
             <!--BLOG-HOME-->
 
-<section class="blog">
+<section class="blogHome">
 
-    <div class="blog__main">
+    <div class="blogHome__main">
 
     </div>
 
-    <ul class="blog__secondary"></ul>
+    <ul class="blogHome__secondary"></ul>
+
+
 
 
     
     
 </section>
 
-    <script src="/js/stl-home.js"></script>
+    <script src="/js/overlay-menu.js"></script>        
     <script src="/js/blog-home.js"></script>
     <script src="jquery-3.1.1.min.js"></script>
     <script src="jquery.paroller.min.js"></script>

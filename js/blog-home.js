@@ -6,13 +6,14 @@ fetch('./js/blog.json')
         blogs = data;
 
         blogs.forEach(function (blog) {
-        document.querySelector('.blog__secondary').innerHTML += 
+        document.querySelector('.blogHome__secondary').innerHTML += 
             `
             <li>
-                <img src="${blog.image}" class= "blog__secondary--img" alt="blog image">
-                <h3 class="blog__secondary--title">${blog.h3}</h3>
-                <p class="blog__secondary--text">${blog.text}<a href="">Read more...</a></p>
-                <p class="blog__secondary--footer">${blog.footer}</p>
+                <img src="${blog.image}" class= "blogHome__secondary--img" alt="blog image">
+                <p class="blogHome__secondary--footer">${blog.footer}</p>
+                <h3 class="blogHome__secondary--title">${blog.h3}</h3>
+                <p class="blogHome__secondary--text">${blog.text}</p>
+                <a href="">Read more...</a>
                 
             </li>
             `;

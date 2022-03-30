@@ -1,7 +1,7 @@
 header{
     display: block;
     flex:1;
-    height: fit-content;
+    height: 110vh;
     flex-basis: auto;
     flex-wrap: wrap;
     margin-bottom: 60px;
@@ -31,16 +31,11 @@ header{
 
 .hero{
     //@include parallax(.3);
-    background-image: url(./../../content/images/hero-image.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
+    position: relative;
     margin-left: 60vw;
-    top: 150px;
+    top: -1200px;
     display: block;
     width: 47vw;
-    height: 800;
     z-index: -1;
     overflow: hidden;
     & > *{
