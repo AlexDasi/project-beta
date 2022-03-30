@@ -1,3 +1,7 @@
+<?php 
+    $navTransparent = TRUE;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <!-- The canvas element is used to draw the 3D scene -->

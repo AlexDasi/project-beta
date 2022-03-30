@@ -1,0 +1,31 @@
+.blog{
+    background-color: $dark;
+}
+
+.blog__secondary{
+    list-style: none;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-inline-start: 0px;
+    margin: 90px 0px 90px 0px;
+    
+    &>li{
+        margin: 10px;
+        width: auto;
+
+        &--title &--footer a{
+            color: $light;
+        }
+        &--text{
+            color: $white;
+        }
+        &--img{
+            width: 25vw;
+            height: 25vw;
+        }
+
+    }
+
+}

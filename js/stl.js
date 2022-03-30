@@ -6,10 +6,13 @@ tagsTotales.forEach(function(tag) {
 //let camisas = []
 //const CamisasAsString = camisas.join 
 
+const favouriteShirts = [];
+
 fetch('./js/camisas.json')
     .then(function(data) { return data.json()})
     .then(function(data) { 
         camisas = data;
+        paintProducts([])
     })
 
 document.querySelectorAll('.stl__filters--tags').forEach(function(button) {
@@ -24,30 +27,37 @@ document.querySelectorAll('.stl__filters--tags').forEach(function(button) {
     })
 })
 
+// HEART BUTTON
+
+function changeClass(id) {
+    var element = document.getElementById(`heart-${id}`);
+    element.classList.toggle("is-active");
+    if (element.classList.contains('is-active')) {
+        favouriteShirts.push(id);
+    } else {
+        favouriteShirts.splice(favouriteShirts.indexOf(id),1);
+    }
+}
+
 function paintProducts(selectedFilter) {
     document.querySelector('.stl__list').innerHTML = '';
     camisas.forEach(function (camisa) {
-        if (camisa.tags.some(function(tag) { return selectedFilter.includes(tag) })) {
+        const hasNotFilters = selectedFilter.length === 0;
+        const filterIncluded = camisa.tags.some(function(tag) { return selectedFilter.includes(tag) });
+        if (hasNotFilters || filterIncluded) {
             document.querySelector('.stl__list').innerHTML += 
             `
             <li class="stl__block">
                 <div>
-                    <div id="heart" onclick="changeClass()" class="heart"></div>  
+                    <div id="heart-${camisa.id}" onclick="changeClass(${camisa.id})" class="heart ${favouriteShirts.includes(camisa.id) ? 'is-active' : ''}"></div>  
                     <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
                 </div>
                 <p class="stl__name">${camisa.name}</p> 
-                <p class="stl__tags">${camisa.tags}</p> 
+                <p class="stl__tags">${camisa.tags.join(",  ")}</p> 
             </li>
             `;
         }
     });
-
-    // HEART BUTTON
-
-    function changeClass() {
-        var element = document.getElementById("heart");
-        element.classList.toggle("is-active");
-        }
 
     }
 

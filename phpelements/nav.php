@@ -1,6 +1,12 @@
+    <?php
+        if($navTransparent === TRUE){ 
+            $navClass = "nav--transparent";
+        }
+    ?>
+    
     <!--NAV-->
     <div id="home"></div>
-    <nav class="nav">
+    <nav class="nav <?php echo $navClass; ?>">
         <a href="/index.php"  class="nav__left">
             <svg width="52" height="100" viewBox="0 0 98 182" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.9142 158.107C34.3897 164.946 31.2527 170.211 27.4399 170.211C23.2641 170.211 19.8749 163.887 19.8749 156.09C19.8749 148.293 23.2641 141.969 27.4399 141.969V134.908H7.2666V175.255H47.6133V158.107H34.9142Z" fill="#01003C"/>

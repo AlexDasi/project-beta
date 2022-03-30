@@ -1,4 +1,7 @@
 .stl {
+    &__body{
+        justify-content: flex-start;;
+    }
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,15 +87,16 @@
     }
 
     &__paragraph{
-        margin: 90px 0px 35px 90px;
+        margin: 120px 0px 35px 120px;
     }
 
     &__promotext{
-        margin-bottom: 60px;
+        margin-bottom: 120px;
     }
 }
 
 .intro--text{
+    margin: 150px 0px 10px;
     font-size: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -105,7 +109,7 @@
 
     &>*{
         width: 1020px;
-        margin-left: 10px;
+        margin: 15px 0px 15px 10px;
     }
 }
 

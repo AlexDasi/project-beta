@@ -21,7 +21,11 @@ h2, .intro__text--paragraph {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 52px;
+}
+
+.h2-mobile {
+  font-size: 32px;
 }
 
 .p-small {
@@ -61,9 +65,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   position: initial;
 }
 
@@ -265,6 +266,9 @@ header {
 .nav a:hover {
   text-decoration: none;
 }
+.nav--transparent {
+  background-color: transparent;
+}
 
 /* The Overlay (background) */
 .overlay {
@@ -359,6 +363,11 @@ nav > span {
       -ms-flex-align: center;
           align-items: center;
 }
+.stl__body {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .stl__filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,13 +445,14 @@ nav > span {
   font-family: "Roboto Condensed", sans-serif;
 }
 .stl__paragraph {
-  margin: 90px 0px 35px 90px;
+  margin: 120px 0px 35px 120px;
 }
 .stl__promotext {
-  margin-bottom: 60px;
+  margin-bottom: 120px;
 }
 
 .intro--text {
+  margin: 150px 0px 10px;
   font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,7 +470,7 @@ nav > span {
 }
 .intro--text > * {
   width: 1020px;
-  margin-left: 10px;
+  margin: 15px 0px 15px 10px;
 }
 
 .active {
@@ -489,4 +499,37 @@ nav > span {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   background-position: -2800px 0;
+}
+
+.blog {
+  background-color: #01003C;
+}
+
+.blog__secondary {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin: 90px 0px 90px 0px;
+}
+.blog__secondary > li {
+  margin: 10px;
+  width: auto;
+}
+.blog__secondary > li--title .blog__secondary > li--footer a {
+  color: #E6F6B7;
+}
+.blog__secondary > li--text {
+  color: #FFFFFF;
+}
+.blog__secondary > li--img {
+  width: 25vw;
+  height: 25vw;
 }
