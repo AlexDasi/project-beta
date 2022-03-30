@@ -51,9 +51,9 @@ include './phpelements/nav.php'
 
 
 <?php
-
+/*
 include './phpelements/stl-home.php'
-
+*/
 ?>
 
             <!--CTA-2-->
