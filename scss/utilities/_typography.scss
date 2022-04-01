@@ -1,6 +1,6 @@
 //-----> $TYPOGRAPHY
 
-h1,h2,h3{
+h1,h2,h3,h4{
     @include main-text;
 }
 p,a
@@ -22,6 +22,10 @@ h3{
     font-size: 52px; 
 }
 
+h4{
+    font-size: 40px;
+}
+
 .h2-mobile{
     font-size: 32px;
 }
@@ -32,6 +36,10 @@ h3{
 
 .p-medium{
     font-size: $pmedium;
+}
+
+.p-large{
+    font-size: $plarge;
 }
 
 .centered-text{

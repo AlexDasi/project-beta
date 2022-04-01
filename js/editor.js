@@ -14,27 +14,77 @@ var activeOption = 'shirt';
 const colors = [
 {
     texture: '../content/images/patterns/1.webp',
-    size: [1,1,1],
+    size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
     texture: '../content/images/patterns/2.webp',
-    size: [1,1,1],
+    size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
   texture: '../content/images/patterns/3.jpeg',
-    size: [1,1,1],
+    size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
   texture: '../content/images/patterns/4.jpeg',
-    size: [1,1,1],
+    size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
   texture: '../content/images/patterns/5.jpeg',
-    size: [1,1,1],
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/6.jpeg',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/7.jpeg',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/8.jpeg',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/9.jpeg',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/10.jpeg',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/11.png',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/12.png',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/13.png',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/14.png',
+    size: [0.2,0.2,0.2],
+    shininess: 0
+},
+{
+  texture: '../content/images/patterns/15.jpeg',
+    size: [0.2,0.2,0.2],
     shininess: 0
 },
 
@@ -75,104 +125,20 @@ const colors = [
     color: 'CB304A'
 },
 {
-    color: 'FED7C8'
+  color: 'EFF2F2'
 },
 {
-    color: 'C7BDBD'
+  color: 'B0C5C1'
 },
 {
-    color: '3DCBBE'
+  color: '8B8C8C'
 },
 {
-    color: '264B4F'
+  color: '565F59'
 },
 {
-    color: '389389'
+  color: 'CB304A'
 },
-{
-    color: '85BEAE'
-},
-{
-    color: 'F2DABA'
-},
-{
-    color: 'F2A97F'
-},
-{
-    color: 'D85F52'
-},
-{
-    color: 'D92E37'
-},
-{
-    color: 'FC9736'
-},
-{
-    color: 'F7BD69'
-},
-{
-    color: 'A4D09C'
-},
-{
-    color: '4C8A67'
-},
-{
-    color: '25608A'
-},
-{
-    color: '75C8C6'
-},
-{
-    color: 'F5E4B7'
-},
-{
-    color: 'E69041'
-},
-{
-    color: 'E56013'
-},
-{
-    color: '11101D'
-},
-{
-    color: '630609'
-},
-{
-    color: 'C9240E'
-},
-{
-    color: 'EC4B17'
-},
-{
-    color: '281A1C'
-},
-{
-    color: '4F556F'
-},
-{
-    color: '64739B'
-},
-{
-    color: 'CDBAC7'
-},
-{
-    color: '946F43'
-},
-{
-    color: '66533C'
-},
-{
-    color: '173A2F'
-},
-{
-    color: '153944'
-},
-{
-    color: '27548D'
-},
-{
-    color: '438AAC'
-}
 
 ]
 

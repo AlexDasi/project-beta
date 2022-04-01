@@ -1,10 +1,11 @@
 header{
     display: block;
     flex:1;
-    height: fit-content;
+    min-height: 100vw;
+    max-height: 150vw;
     flex-basis: auto;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .intro__text{
@@ -30,18 +31,12 @@ header{
 //@include parallax-init;
 
 .hero{
-    //@include parallax(.3);
-    position: relative;
+    position: absolute;
     margin-left: 60vw;
-    top: -1200px;
-    display: block;
-    width: 47vw;
+    top: 350px;
+    width: 30vw;
     z-index: -1;
     overflow: hidden;
-    & > *{
-        overflow: hidden;
-        width: auto;
-    }
 }
 
 

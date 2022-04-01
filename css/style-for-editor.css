@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #01003C;
   font-family: "Yeseva One", cursive;
   font-weight: 300;
@@ -24,6 +24,10 @@ h3 {
   font-size: 52px;
 }
 
+h4 {
+  font-size: 40px;
+}
+
 .h2-mobile {
   font-size: 32px;
 }
@@ -34,6 +38,10 @@ h3 {
 
 .p-medium {
   font-size: 24px;
+}
+
+.p-large {
+  font-size: 36px;
 }
 
 .centered-text {
@@ -127,7 +135,7 @@ body {
   width: 100%;
 }
 
-.options {
+.options, .buy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +144,7 @@ body {
   bottom: 100px;
 }
 
-.option {
+.option, .buy {
   margin: -1px;
   border: 2px solid #01003C;
   background-color: #F2F2F2;
@@ -155,7 +163,7 @@ body {
           align-items: center;
   cursor: pointer;
 }
-.option > * {
+.option > *, .buy > * {
   font-family: "Roboto Condensed", sans-serif;
   margin: 5px;
 }
@@ -176,6 +184,17 @@ body {
 .option.--is-active:hover {
   border: 2px solid #01003C;
   background-color: #FFFFFF;
+}
+
+.buy {
+  background-color: #01003C;
+  color: #E6F6B7;
+  right: 45%;
+  left: 45%;
+}
+.buy:hover {
+  background-color: #E6F6B7;
+  color: #01003C;
 }
 
 .option svg {
@@ -223,7 +242,7 @@ body {
           flex: 1;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  background-size: cover;
+  background-size: 300px;
   background-position: center;
 }
 
@@ -366,14 +385,13 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  min-height: 100vw;
+  max-height: 150vw;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .intro__text {
@@ -403,17 +421,12 @@ header {
 }
 
 .hero {
-  position: relative;
+  position: absolute;
   margin-left: 60vw;
-  top: -1200px;
-  display: block;
-  width: 47vw;
+  top: 350px;
+  width: 30vw;
   z-index: -1;
   overflow: hidden;
-}
-.hero > * {
-  overflow: hidden;
-  width: auto;
 }
 
 .fl-header {

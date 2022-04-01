@@ -33,7 +33,9 @@ include './phpelements/nav.php'
 
 
     <!-- These toggle the the different parts of the chair that can be edited, note data-option is the key that links to the name of the part in the 3D file -->
+    <button class="buy option">BUY 19.90€</button>
     <div class="options">
+
         <div class="option --is-active" data-option="shirt">
             <p>Fabric</p>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

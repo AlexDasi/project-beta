@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "axios": "^0.26.1",
+    "jquery": "^3.6.0",
+    "rellax": "^1.12.1",
     "styled-components": "^5.3.3",
     "swiper": "^8.0.7"
   }

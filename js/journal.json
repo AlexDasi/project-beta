@@ -1,0 +1,39 @@
+[
+    { 
+        "image": "./content/images/blog/blog 1.jpg", 
+        "h3": "& HAND MADE WITH LOVE.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "Our personal sewer, Mr John Mckenzie on his Iowa sewing workshop."
+    },
+    { 
+        "image": "./content/images/blog/blog 2.jpg", 
+        "h3": "KIDS WITH  BIG DREAMS.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "You'd never laugh that much in a real job"
+    },
+    { 
+        "image": "./content/images/blog/blog 3.jpg", 
+        "h3": "THE CONCEPT THAT BROUGHT US HERE.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "That's where I should be instead of here typing code :)"
+    },
+    { 
+        "image": "./content/images/blog/blog 1.jpg", 
+        "h3": "& HAND MADE WITH LOVE.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "Our personal sewer, Mr John Mckenzie on his Iowa sewing workshop."
+    },
+    { 
+        "image": "./content/images/blog/blog 2.jpg", 
+        "h3": "KIDS WITH  BIG DREAMS.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "You'd never laugh that much in a real job"
+    },
+    { 
+        "image": "./content/images/blog/blog 3.jpg", 
+        "h3": "THE CONCEPT THAT BROUGHT US HERE.", 
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.",
+        "footer": "That's where I should be instead of here typing code :)"
+    }
+
+]

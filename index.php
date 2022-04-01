@@ -29,9 +29,8 @@ include './phpelements/nav.php'
                 <path d="M133.272 14.8675C143.078 12.703 152.837 10.3237 162.707 8.58634C164.626 8.25455 168.136 9.87 168.693 11.5249C169.548 14.0992 169.491 18.5186 168.04 20.3103C164.744 24.3939 160.638 27.8766 156.389 30.6773C148.565 35.8283 140.206 39.9903 132.382 45.1414C123.273 51.1447 116.533 59.7847 111.993 70.6491C108.601 78.7493 103.672 81.6375 98.355 79.1842C93.1497 76.769 91.2146 70.5023 93.6066 62.2028C98.9891 43.4875 110.177 30.2494 125.108 20.7115C127.813 18.9788 130.67 17.521 133.447 15.9367C133.365 15.5913 133.325 15.2261 133.272 14.8675Z" fill="white"/>
             </svg>
         </span>
-    <div class="hero">
-        <img src="content/images/hero-image.jpg">
-    </div>
+    
+        <img class="hero rellax" data-rellax-speed="7" src="content/images/hero-image.jpg">
             
 
     </header>
@@ -51,9 +50,9 @@ include './phpelements/nav.php'
 
 
 <?php
-/*
+
 include './phpelements/stl-home.php'
-*/
+
 ?>
 
             <!--CTA-2-->
@@ -69,15 +68,26 @@ include './phpelements/stl-home.php'
     
 </section>
 
-            <!--BLOG-HOME-->
+            <!--journal-HOME-->
 
-<section class="blogHome">
+<section class="journalHome">
 
-    <div class="blogHome__main">
+    <div class="journalHome__main">
+        <img src="/content/images/journal/blog main.jpg" class= "journalHome__main--img" alt="journal image">
+        <div class="journalHome__main--copy">
+            <div>
+                <h3 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h3>
+                <p class="journalHome__main--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.</p>
+                <a href="">Read more...</a>
+            </div>
+            <div>
+                <p class="journalHome__main--footer">Real photos from our real fields of fake cotton</p>
+            </div>
+        </div>
 
     </div>
 
-    <ul class="blogHome__secondary"></ul>
+    <ul class="journalHome__secondary"></ul>
 
 
 
@@ -86,9 +96,27 @@ include './phpelements/stl-home.php'
     
 </section>
 
+
+
     <script src="/js/overlay-menu.js"></script>        
-    <script src="/js/blog-home.js"></script>
-    <script src="jquery-3.1.1.min.js"></script>
-    <script src="jquery.paroller.min.js"></script>
+    <script src="/js/journal-home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
+    <script src="/node_modules/rellax/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+
+    <script>
+  //Enable Horizontal Parallax Scrolling
+        var rellax = new Rellax('.rellaxH', {
+            horizontal:true
+            vertical:false
+        });
+    </script>
+    
+
+
 </body>
 </html>
