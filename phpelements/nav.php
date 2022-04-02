@@ -3,12 +3,32 @@
             $navClass = "nav--transparent";
         }
     ?>
+<head>
+<script>
+    window.onscroll = function() {
+        growShrinkLogo()
+    };
+
+    function growShrinkLogo() {
+        var Logo = document.getElementById("Logo")
+        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        Logo.style.width = '60px';
+        } else {
+        Logo.style.width = '100px';
+        }
+    }
+</script>
+</head>
+<body>
+    
+</body>
+</html>
     
     <!--NAV-->
     <div id="home"></div>
     <nav class="nav <?php echo $navClass; ?>" style="z-index:10;">
         <a href="/index.php"  class="nav__left">
-            <svg width="52" height="100" viewBox="0 0 98 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="logo" width="52" height="100" viewBox="0 0 98 182" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.9142 158.107C34.3897 164.946 31.2527 170.211 27.4399 170.211C23.2641 170.211 19.8749 163.887 19.8749 156.09C19.8749 148.293 23.2641 141.969 27.4399 141.969V134.908H7.2666V175.255H47.6133V158.107H34.9142Z" fill="#01003C"/>
                 <path d="M90.3327 49.4673H80.8394V89.814H90.3327V49.4673Z" fill="#01003C"/>
                 <path d="M50.4952 49.4673C50.4952 57.2643 47.0776 63.5886 42.8666 63.5886C38.6556 63.5886 35.238 57.2643 35.238 49.4673H7.2666V89.814H19.9809V77.71C19.9809 69.913 23.3985 63.5886 27.6095 63.5886C31.8204 63.5886 35.238 69.913 35.238 77.71V89.814H50.4952V77.71C50.4952 69.913 53.9128 63.5886 58.1237 63.5886C62.3347 63.5886 65.7523 69.913 65.7523 77.71V89.814H78.4666V49.4673H50.4952Z" fill="#01003C"/>
@@ -31,7 +51,7 @@
                 <li class="menu-items"><a href="/editor.php">SHOP</a></li>
                 <li class="menu-items"><a href="/stl.php">STL</a></li>
                 <li class="menu-items"><a href="/journal.php">JOURNAL</a></li>
-                <li class="menu-items"><a href="#faqs">FAQS</a></li>
+                <li class="menu-items"><a href="/FAQS.php">FAQS</a></li>
                 <li class="menu-items"><a href="#contact">CONTACT</a></li>
             </ul>
         </div>

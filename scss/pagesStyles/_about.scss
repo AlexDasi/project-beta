@@ -9,15 +9,16 @@
     &__cover{
         display: block;
         flex:1;
-        min-height: 100vw;
-        max-height: 150vw;
+        height: 100vw;
         flex-basis: auto;
         flex-wrap: wrap;
+        margin-bottom: 120px;
 
         &--image{
             background-image: url("/content/images/about/cover-redux.jpg");
             background-color: #cccccc;
-            height: 150vh;
+            height: 100vw;
+
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -123,7 +124,7 @@
     
     &__third {
         position: relative;
-        top: -13vw;
+        top: -11.5vw;
         background-color: $dark;
         z-index: -3;
 
@@ -176,6 +177,7 @@
         }
 
         &--bkg{
+            margin: 120px 0 0 0;
             margin-left: auto;
             margin-right: auto;
             display: flex;
@@ -183,8 +185,8 @@
             justify-content: center;
             height: 49vw;
             background-image: url("/content/images/about/sea.jpg");
-            width: 78vw;
-            height: 49vw;
+            width: 74vw;
+            height: 46vw;
             
 
         }

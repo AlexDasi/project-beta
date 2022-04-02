@@ -1,6 +1,6 @@
 //-----> $TYPOGRAPHY
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     @include main-text;
 }
 p,a
@@ -24,6 +24,12 @@ h3{
 
 h4{
     font-size: 40px;
+}
+
+h5{
+    text-transform: none;
+    text-align: right;
+    font-size: 55px;
 }
 
 .h2-mobile{

@@ -1,4 +1,4 @@
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: #01003C;
   font-family: "Yeseva One", cursive;
   font-weight: 300;
@@ -26,6 +26,12 @@ h3 {
 
 h4 {
   font-size: 40px;
+}
+
+h5 {
+  text-transform: none;
+  text-align: right;
+  font-size: 55px;
 }
 
 .h2-mobile {
@@ -147,15 +153,15 @@ header {
   margin-left: 60vw;
   top: 350px;
   width: 30vw;
-  z-index: -1;
+  z-index: -2;
   overflow: hidden;
 }
 
 .fl-header {
   position: relative;
-  width: 22.5vw;
-  top: -244px;
-  left: 277px;
+  width: 18vw;
+  top: -558px;
+  left: 517px;
   z-index: -1;
 }
 
@@ -669,17 +675,17 @@ nav > .spanLight {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-height: 100vw;
-  max-height: 150vw;
+  height: 100vw;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 120px;
 }
 .about__cover--image {
   background-image: url("/content/images/about/cover-redux.jpg");
   background-color: #cccccc;
-  height: 150vh;
+  height: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -796,7 +802,7 @@ nav > .spanLight {
 }
 .about__third {
   position: relative;
-  top: -13vw;
+  top: -11.5vw;
   background-color: #01003C;
   z-index: -3;
 }
@@ -857,6 +863,7 @@ nav > .spanLight {
   background-size: cover;
 }
 .about__images--bkg {
+  margin: 120px 0 0 0;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -870,12 +877,68 @@ nav > .spanLight {
           justify-content: center;
   height: 49vw;
   background-image: url("/content/images/about/sea.jpg");
-  width: 78vw;
-  height: 49vw;
+  width: 74vw;
+  height: 46vw;
 }
 .about__images--front {
   position: relative;
   background-image: url("/content/images/about/mountain.jpg");
   width: 50vw;
   height: 23vw;
+}
+
+.faqs__h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  display: block;
+  margin: 40vh 0 120px 20px;
+  z-index: 2;
+}
+.faqs__q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.faqs__q--1, .faqs__q--2, .faqs__q--3, .faqs__q--4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 60px 0 60px 0;
+}
+.faqs__q--1--h5, .faqs__q--1--p, .faqs__q--2--h5, .faqs__q--2--p, .faqs__q--3--h5, .faqs__q--3--p, .faqs__q--4--h5, .faqs__q--4--p {
+  margin: 0 2vw 0 2vw;
+}
+.faqs__q--1--h5, .faqs__q--2--h5, .faqs__q--3--h5, .faqs__q--4--h5 {
+  width: 26vw;
+}
+.faqs__q--1--p, .faqs__q--2--p, .faqs__q--3--p, .faqs__q--4--p {
+  width: 47vw;
 }
