@@ -29,7 +29,7 @@ include './phpelements/nav.php'
 <section class="journal__blog">
 
     <div class="journalHome__main">
-        <img src="/content/images/journal/blog main.jpg" class= "journalHome__main--img" alt="journal image">
+        <img src="/content/images/journal/blog cotton.jpg" class= "journalHome__main--img" alt="journal image">
         <div class="journalHome__main--copy">
             <div>
                 <h3 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h3>

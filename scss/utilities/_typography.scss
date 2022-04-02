@@ -45,3 +45,18 @@ h4{
 .centered-text{
     text-align: center;
 }
+
+.yesevaSmall, .yesevaLarge{
+
+    @include main-text;
+    text-transform: none;
+}
+
+.yesevaSmall{
+    font-size: $pmedium;
+    margin-bottom: 20px;
+}
+
+.yesevaLarge{
+    font-size: $plarge;
+}

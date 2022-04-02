@@ -27,7 +27,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content">
                 <li class="menu-items"><a href="/index.php">HOME</a></li>
-                <li class="menu-items"><a href="#about">ABOUT</a></li>
+                <li class="menu-items"><a href="/about.php">ABOUT</a></li>
                 <li class="menu-items"><a href="/editor.php">SHOP</a></li>
                 <li class="menu-items"><a href="/stl.php">STL</a></li>
                 <li class="menu-items"><a href="/journal.php">JOURNAL</a></li>
