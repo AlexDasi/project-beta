@@ -11,7 +11,7 @@
     
 <?php
 
-include './phpelements/nav.php'
+include 'phpelements/nav.php'
 
 ?>
 
@@ -116,5 +116,13 @@ We are currently shipping out under normal circumstances. Despite this, couriers
 
 </section>
 
+<footer>
+
+<?php
+
+include 'phpelements/footer.php'
+
+?>
+</footer>
 
 </body>

@@ -1,73 +1,73 @@
 [
     { 
         "id": 1,
-        "image": "./content/images/stl/user 1.jpeg", 
+        "image": "content/images/stl/user 1.jpeg", 
         "name": "Alice", 
         "tags": ["urban", "sober", "nighttime"]
     },
     { 
         "id": 2,
-        "image": "./content/images/stl/user 2.jpeg", 
+        "image": "content/images/stl/user 2.jpeg", 
         "name": "Aziz", 
         "tags": ["tropical", "colorful", "nighttime"]
     },
     { 
         "id": 3,
-        "image": "./content/images/stl/user 3.webp", 
+        "image": "content/images/stl/user 3.webp", 
         "name": "Su", 
         "tags": ["beach", "daytime", "sober"]
     },
     { 
         "id": 4,
-        "image": "./content/images/stl/user 4.jpg", 
+        "image": "content/images/stl/user 4.jpg", 
         "name": "Joao", 
         "tags": ["sober", "monochromatic", "urban"]
     },
     { 
         "id": 5,
-        "image": "./content/images/stl/user 5.jpg", 
+        "image": "content/images/stl/user 5.jpg", 
         "name": "Timo", 
         "tags": ["urban", "beach", "monochromatic"]
     },
     { 
         "id": 6,
-        "image": "./content/images/stl/user 6.jpg", 
+        "image": "content/images/stl/user 6.jpg", 
         "name": "Sylvia", 
         "tags": ["colorful", "tropical", "beach"]
     },
     { 
         "id": 7,
-        "image": "./content/images/stl/user 7.jpg", 
+        "image": "content/images/stl/user 7.jpg", 
         "name": "Marcus", 
         "tags": ["vintage", "beach", "nighttime"]
     },
     { 
         "id": 8,
-        "image": "./content/images/stl/user 8.jpeg", 
+        "image": "content/images/stl/user 8.jpeg", 
         "name": "Andrew", 
         "tags": ["monochromatic", "urban", "nighttime"]
     },
     { 
         "id": 9,
-        "image": "./content/images/stl/user 9.jpg", 
+        "image": "content/images/stl/user 9.jpg", 
         "name": "Josh", 
         "tags": ["monochromatic", "sober", "nighttime"]
     },
     { 
         "id": 10,
-        "image": "./content/images/stl/user 10.jpg", 
+        "image": "content/images/stl/user 10.jpg", 
         "name": "Ray", 
         "tags": ["tropical", "colorful", "beach"]
     },
     { 
         "id": 11,
-        "image": "./content/images/stl/user 11.jpg", 
+        "image": "content/images/stl/user 11.jpg", 
         "name": "Shona", 
         "tags": ["urban", "vintage", "arty"]
     },
     { 
         "id": 12,
-        "image": "./content/images/stl/user 12.webp", 
+        "image": "content/images/stl/user 12.webp", 
         "name": "Clifford", 
         "tags": ["daytime", "tropical", "beach"]
     }

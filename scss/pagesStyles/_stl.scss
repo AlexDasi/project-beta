@@ -14,7 +14,7 @@
     &__filters {
         display: flex;
         justify-content: flex-start;
-        width: 1020px;
+        width: 80vw;
 
     
         &--tags{
@@ -32,7 +32,7 @@
     &__list{
         list-style: none;
         display: flex;
-        width: 1020px;
+        width: 80vw;
         flex-wrap: wrap;
         justify-content:flex-start;
         padding-inline-start: 0px;
@@ -105,7 +105,7 @@
     align-items: center;
 
     &>*{
-        width: 1020px;
+        width: 80vw;
         margin: 15px 0px 15px 10px;
     }
 }

@@ -27,8 +27,9 @@
         &--copy{
             margin: 0 0 0 2vw;
             position: absolute;
-            top: 40vh;
+            top: 50vh;
             &>*{
+                @include no-margin;
                 color: $white;
             }
         }
@@ -80,6 +81,7 @@
 
         &--img{
             height: auto;
+            min-height: 60vh;
             background-image: url("/content/images/stl/user 3.webp");
             background-position: center;
             background-repeat: no-repeat;
@@ -163,7 +165,7 @@
             -webkit-box-pack: end;
             display: flex;
             -ms-flex-pack: end;
-            justify-content: flex-end;
+            justify-content: center;
         }
     }
 

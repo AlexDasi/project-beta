@@ -215,7 +215,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../../content/images/CTA-bkg.jpg");
+  background-image: url("content/images/CTA-bkg.jpg");
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -296,6 +296,66 @@ header {
 }
 .nav--transparent {
   background-color: transparent;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__thanks {
+  margin: 60px 0 240px 0;
+}
+.footer__logo {
+  margin: 240px 0 60px 0;
+}
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  height: 60px;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+.footer__bottom--line {
+  width: 2px;
+  height: 60px;
+  background-color: #01003C;
+}
+.footer__bottom--text > *, .footer__bottom--text > p > a {
+  color: #01003C;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  text-decoration: none;
+  padding: 1vw;
+}
+.footerLink {
+  padding: 1vw;
+  cursor: pointer;
+}
+.footerLink:hover {
+  font-weight: 400;
 }
 
 /* The Overlay (background) */
@@ -407,7 +467,7 @@ nav > .spanLight {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 1020px;
+  width: 80vw;
 }
 .stl__filters--tags {
   margin: 10px;
@@ -424,7 +484,7 @@ nav > .spanLight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1020px;
+  width: 80vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -499,7 +559,7 @@ nav > .spanLight {
           align-items: center;
 }
 .intro--text > * {
-  width: 1020px;
+  width: 80vw;
   margin: 15px 0px 15px 10px;
 }
 
@@ -693,9 +753,19 @@ nav > .spanLight {
 .about__cover--copy {
   margin: 0 0 0 2vw;
   position: absolute;
-  top: 40vh;
+  top: 50vh;
 }
 .about__cover--copy > * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   color: #FFFFFF;
 }
 .about__main, .about__secondary, .about__third {
@@ -760,6 +830,7 @@ nav > .spanLight {
 }
 .about__main--img {
   height: auto;
+  min-height: 60vh;
   background-image: url("/content/images/stl/user 3.webp");
   background-position: center;
   background-repeat: no-repeat;
@@ -854,7 +925,8 @@ nav > .spanLight {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 .about__images--bkg, .about__images--front {
   padding: 0 2vw 0 2vw;
@@ -941,4 +1013,117 @@ nav > .spanLight {
 }
 .faqs__q--1--p, .faqs__q--2--p, .faqs__q--3--p, .faqs__q--4--p {
   width: 47vw;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.contact__text, .contact__form {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5vw 0 5vw;
+}
+.contact__text > h2, .contact__form > h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-size: 6vw;
+  text-transform: none;
+}
+.contact__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+.contact__form {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__form--line {
+  display: block;
+  position: relative;
+  margin-bottom: 42px;
+}
+.contact__form--line > label {
+  color: #01003C;
+  font-family: "Yeseva One", cursive;
+  font-weight: 300;
+  line-height: 75%;
+  text-transform: uppercase;
+  font-size: 1vw;
+  display: block;
+}
+.contact__form--line > input, .contact__form--line > textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 0;
+  line-height: 1.75;
+  background-color: #E6F6B7;
+  border-style: none;
+  border: 2px rgba(1, 0, 61, 0.5);
+  border-bottom-style: solid;
+}
+.contact__form--line > input:focus, .contact__form--line > input:hover, .contact__form--line > input:active, .contact__form--line > textarea:focus, .contact__form--line > textarea:hover, .contact__form--line > textarea:active {
+  border-style: none;
+  border: 2px #01003C;
+  border-bottom-style: solid;
+}
+
+.cf--left, .cf--right {
+  width: 100%;
+}
+.cf--right {
+  margin-left: 3vw;
+}
+
+:focus-visible {
+  border-style: none;
+  border: 2px #01003C;
+  border-bottom-style: solid;
+}
+
+.c-Contact-form-right-textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  resize: none;
+  height: inherit;
+}
+
+:focus {
+  outline: none;
 }

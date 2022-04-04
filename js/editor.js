@@ -5,7 +5,7 @@ const TRAY = document.getElementById('js-tray-slide');
 
 var theModel;
 
-const MODEL_PATH = "../content/camisa.glb";
+const MODEL_PATH = "content/camisa.glb";
 
 var loaded = false;
 var cameraFar = 5;
@@ -13,77 +13,77 @@ var activeOption = 'shirt';
 
 const colors = [
 {
-    texture: '../content/images/patterns/1.webp',
+    texture: 'content/images/patterns/1.webp',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-    texture: '../content/images/patterns/2.webp',
+    texture: 'content/images/patterns/2.webp',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/3.jpeg',
+  texture: 'content/images/patterns/3.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/4.jpeg',
+  texture: 'content/images/patterns/4.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/5.jpeg',
+  texture: 'content/images/patterns/5.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/6.jpeg',
+  texture: 'content/images/patterns/6.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/7.jpeg',
+  texture: 'content/images/patterns/7.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/8.jpeg',
+  texture: 'content/images/patterns/8.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/9.jpeg',
+  texture: 'content/images/patterns/9.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/10.jpeg',
+  texture: 'content/images/patterns/10.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/11.png',
+  texture: 'content/images/patterns/11.png',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/12.png',
+  texture: 'content/images/patterns/12.png',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/13.png',
+  texture: 'content/images/patterns/13.png',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/14.png',
+  texture: 'content/images/patterns/14.png',
     size: [0.2,0.2,0.2],
     shininess: 0
 },
 {
-  texture: '../content/images/patterns/15.jpeg',
+  texture: 'content/images/patterns/15.jpeg',
     size: [0.2,0.2,0.2],
     shininess: 0
 },

@@ -1,6 +1,6 @@
 
 
-fetch('./js/journal.json')
+fetch('js/journal.json')
     .then(function(data) { return data.json()})
     .then(function(data) { 
         journals = data;

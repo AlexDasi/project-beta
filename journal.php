@@ -6,15 +6,14 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300;400&family=Yeseva+One&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <?php
 
-include './phpelements/nav.php'
+include 'phpelements/nav.php'
 
 ?>
 
@@ -29,7 +28,7 @@ include './phpelements/nav.php'
 <section class="journal__blog">
 
     <div class="journalHome__main">
-        <img src="/content/images/journal/blog cotton.jpg" class= "journalHome__main--img" alt="journal image">
+        <img src="content/images/journal/blog cotton.jpg" class= "journalHome__main--img" alt="journal image">
         <div class="journalHome__main--copy">
             <div>
                 <h3 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h3>
@@ -47,6 +46,15 @@ include './phpelements/nav.php'
 
 </section>
 
-<script src="/js/journal.js"></script>
+<footer>
+
+<?php
+
+include 'phpelements/footer.php'
+
+?>
+</footer>
+
+<script src="js/journal.js"></script>
 
 </body>

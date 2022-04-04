@@ -8,7 +8,7 @@ tagsTotales.forEach(function(tag) {
 
 const favouriteShirts = [];
 
-fetch('./js/camisas.json')
+fetch('js/camisas.json')
     .then(function(data) { return data.json()})
     .then(function(data) { 
         camisas = data;

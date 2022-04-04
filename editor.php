@@ -26,7 +26,7 @@
 
 <?php
 
-include './phpelements/nav.php'
+include 'phpelements/nav.php'
 
 ?>
 
@@ -69,6 +69,6 @@ include './phpelements/nav.php'
 
     <!-- This is a simple to use extension for three.js that activates all the rotating, dragging and zooming controls we need for both mouse and touch, there isn't a clear CDN for this that I can find -->
     <script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
-    <script src="/js/editor.js"></script>
+    <script src="js/editor.js"></script>
 </body>
 </html>

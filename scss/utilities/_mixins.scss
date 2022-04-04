@@ -21,6 +21,14 @@
     margin-inline-end: 0px;
 }
 
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
 // Magic parallax mixins
 
 $parallax-perspective : 1 !default;

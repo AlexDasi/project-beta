@@ -10,7 +10,7 @@
     <h3 class="stl__promotext">FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA // FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION/@CAMISOLA/</h3>
 </section>
 
-<script src="/js/stl-home.js"></script>
+<script src="js/stl-home.js"></script>
 
     <script>
     var rellaxH = new Rellax('.rellaxH', {

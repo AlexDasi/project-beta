@@ -4,7 +4,7 @@ var cameraFar = 5;
 
 var theModel;
 
-const MODEL_PATH = "../content/camisa 2.glb";
+const MODEL_PATH = "content/camisa 2.glb";
 const BACKGROUND_COLOR = 0xF2F2F2;
 
 // Init the scene

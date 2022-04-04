@@ -13,8 +13,7 @@
         <title>Document</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300;400&family=Yeseva+One&display=swap" rel="stylesheet">        <link rel="stylesheet" href="css/style.css">
 
         
     </head>
@@ -24,7 +23,7 @@
 
 <?php
 
-include './phpelements/nav.php'
+include 'phpelements/nav.php'
 
 ?>
 
@@ -42,7 +41,7 @@ include './phpelements/nav.php'
         <div class="about__main--img" alt="girl with hawaiian shirt"></div>
         <div class="about__main--copy">
             <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. Viverra sollicitudin scelerisque nam velit ut tempor at. Integer sapien sem sit eu, eget. Nulla velit et ultrices tempus. At lacus, aliquam iaculis posuere facilisi pellentesque lacus, malesuada. </p>
-            <p class="yesevaLarge">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum.</p>
+            <p class="yesevaLarge">Bring a festive boost to your everyday style</p>
         </div>
     </div>
     <div class="about__secondary">
@@ -51,11 +50,11 @@ include './phpelements/nav.php'
             <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>
         <div class="about__secondary--div2">
-            <p class="yesevaSmall">A new twist to a classic piece.</p>
+            <p class="yesevaSmall">Not just for beach parties and dads.</p>
             <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>        
         <div class="about__secondary--div3">
-            <p class="yesevaSmall">A new twist to a classic piece.</p>
+            <p class="yesevaSmall">Create and share your unique designs.</p>
             <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>
     </div>
@@ -83,5 +82,14 @@ include './phpelements/nav.php'
     </div>
 </section>
 
+<footer>
+
+    <?php
+
+    include 'phpelements/footer.php'
+
+    ?>
+</footer>
 
 </body>
+</html>
