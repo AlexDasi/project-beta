@@ -20,7 +20,7 @@ include 'phpelements/nav.php'
 <section class="journal__cover">
     <img class="journal__cover--image" src="content/images/journal/page/cover.jpg" alt="guy in a boat in Hawaii">
     <div class="journal__cover--copy">
-        <h3>our journal</h3>
+        <h2>our journal</h2>
         <p class="journal__cover--largeP p-large">A curated selection of our most relevant stories, from some of our collaborators and friends we've met along the years.</p>
     </div>
 </section>
@@ -28,15 +28,18 @@ include 'phpelements/nav.php'
 <section class="journal__blog">
 
     <div class="journalHome__main">
-        <img src="content/images/journal/blog cotton.jpg" class= "journalHome__main--img" alt="journal image">
+        <div class="journalHome__main--img" alt="journal image"></div>
+
+        <p class="journalHome__main--footer desktopHidden">Real photos from our real fields of fake cotton</p>
+
         <div class="journalHome__main--copy">
             <div>
-                <h3 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h3>
-                <p class="journalHome__main--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.</p>
+                <h2 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h2>
+                <p class="p-medium journalHome__main--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.</p>
                 <a href="">Read more...</a>
             </div>
             <div>
-                <p class="journalHome__main--footer">Real photos from our real fields of fake cotton</p>
+                <p class="journalHome__main--footer mobileHidden">Real photos from our real fields of fake cotton</p>
             </div>
         </div>
 

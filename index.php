@@ -49,10 +49,10 @@ include 'phpelements/nav.php'
     <span class="CTA__1--text mobileHidden">
         <h2 class="color__light">Only yours, actually.</h2>
         <p class="p-medium color__white">A unique and fully interactive shirt editor where you can play with our massive set of templates and fabrics. Jump in, sit back and let yourself go.</p>
-        <a class="button" href="/editor.php" target=”_blank”>Make your own</a>
+        <a class="button" href="editor.php" target=”_blank”>Make your own</a>
     </span>
     <p class="p-medium intro__text--paragraph desktopHidden">A unique and fully interactive shirt editor where you can play with our massive set of templates and fabrics. Jump in, sit back and let yourself go.</p>
-    <a class="button desktopHidden" href="/editor.php" target=”_blank”>Make your own</a>
+    <a class="button desktopHidden" href="editor.php">Make your own</a>
 </section>
 
     <!--horizontal scroll: https://medium.com/@lucas.eckman/ditch-the-carousel-creating-a-horizontal-scroll-effect-7a36c0f1c456-->
@@ -73,7 +73,7 @@ include 'phpelements/stl-home.php'
             <path d="M594.931 168.461C597.458 184.652 590.298 196.121 575.654 201.743C572.536 202.937 569.33 202.868 566.407 200.983C564.196 199.559 563.03 197.448 563.448 194.846C563.847 192.398 565.108 190.67 567.73 189.604C570.029 188.671 571.838 186.575 573.928 185.094C583.551 178.261 585.892 168.801 583.878 157.758C583.75 157.053 583.511 156.35 583.525 155.658C583.544 154.944 583.814 154.231 583.975 153.519C584.688 153.739 585.557 153.778 586.092 154.212C590.842 158.057 593.647 163.104 594.931 168.461Z" fill="white"/>
         </svg>   
     </div>
-    <a class="button" href="/editor.php" target=”_blank”>Make your own</a>
+    <a class="button" href="editor.php">Make your own</a>
     
 </section>
 

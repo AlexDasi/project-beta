@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, h2, h3, h4, h5 {
   color: #01003C;
   font-family: "Yeseva One", cursive;
@@ -566,6 +567,46 @@ header {
   font-weight: 400;
 }
 
+@media all and (max-width: 768px) {
+  .footer__bottom {
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__bottom--text {
+    width: 33%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__bottom--text > * {
+    color: #01003C;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    text-transform: none;
+    text-decoration: none;
+    padding: 1vw;
+  }
+}
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -705,7 +746,7 @@ nav > .spanLight {
   margin-top: -70px;
 }
 .stl-list__block--home {
-  margin: 10px;
+  margin: 7px;
   padding: 0;
 }
 .stl-list__block--avatar {
@@ -731,28 +772,29 @@ nav > .spanLight {
   font-size: 14px;
 }
 .stl-list__block--name {
+  margin-top: 4px;
   font-family: "Yeseva One", cursive;
 }
 .stl-list__block--tags {
   font-family: "Roboto Condensed", sans-serif;
 }
 @media all and (min-width: 600px) {
-  .stl-list__block, .stl-list__block--home {
+  .stl-list__block {
     width: 50%;
   }
 }
 @media all and (min-width: 768px) {
-  .stl-list__block, .stl-list__block--home {
+  .stl-list__block {
     width: 33%;
   }
 }
 @media all and (min-width: 992px) {
-  .stl-list__block, .stl-list__block--home {
+  .stl-list__block {
     width: 25%;
   }
 }
 @media all and (min-width: 1200px) {
-  .stl-list__block, .stl-list__block--home {
+  .stl-list__block {
     width: 20%;
   }
 }
@@ -839,6 +881,7 @@ nav > .spanLight {
           align-items: center;
 }
 .intro--text > * {
+  padding-left: 6px;
   width: 80vw;
   margin: 15px 0px;
 }
@@ -851,6 +894,7 @@ nav > .spanLight {
 
 @media all and (max-width: 992px) {
   .intro--text > * {
+    padding-left: 6px;
     margin-left: 10px;
   }
 
@@ -883,9 +927,9 @@ nav > .spanLight {
     margin-top: -100px;
     width: 50%;
   }
-  .stl-list__block--img {
-    height: 100%;
-    width: 100%;
+  .stl-list__block--img--home {
+    width: 200px;
+    height: 200px;
   }
   .stl-list--1 {
     right: 200px;
@@ -899,7 +943,7 @@ nav > .spanLight {
 
   .intro--text, .stl-list, .stl__filters {
     width: 100vw;
-    margin: 2vw 2vw;
+    margin: 0;
   }
 
   .intro--text {
@@ -1052,7 +1096,7 @@ nav > .spanLight {
 }
 .journalHome__secondary > li {
   width: 22vw;
-  margin: 0px 2vw 0 2vw;
+  margin: 0px 2vw 6vh 2vw;
 }
 .journalHome__secondary--title, .journalHome__secondary--footer, .journalHome__secondary--text, .journalHome__secondary a {
   width: inherit;
@@ -1066,6 +1110,12 @@ nav > .spanLight {
   margin-top: 40px;
 }
 
+@media all and (max-width: 768px) {
+  .journalHome__secondary > li {
+    width: 35vw;
+    margin: 0px 2vw 6vh 2vw;
+  }
+}
 @media all and (max-width: 600px) {
   .journalHome {
     width: 100%;
@@ -1095,6 +1145,10 @@ nav > .spanLight {
   .journalHome__secondary > li {
     width: 100%;
     margin: 0px 2vw 60px 0;
+  }
+
+  .journal__blog {
+    padding: 0 4vw 0 4vw;
   }
 }
 .about {
@@ -1492,8 +1546,9 @@ nav > .spanLight {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
   display: block;
-  margin: 40vh 0 120px 20px;
+  margin: 40vh 0 60px 20px;
   z-index: 2;
+  font-size: 13vw;
 }
 .faqs__q {
   display: -webkit-box;
@@ -1527,6 +1582,16 @@ nav > .spanLight {
   margin: 60px 0 60px 0;
 }
 .faqs__q--1--h5, .faqs__q--1--p, .faqs__q--2--h5, .faqs__q--2--p, .faqs__q--3--h5, .faqs__q--3--p, .faqs__q--4--h5, .faqs__q--4--p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   margin: 0 2vw 0 2vw;
 }
 .faqs__q--1--h5, .faqs__q--2--h5, .faqs__q--3--h5, .faqs__q--4--h5 {
@@ -1534,6 +1599,108 @@ nav > .spanLight {
 }
 .faqs__q--1--p, .faqs__q--2--p, .faqs__q--3--p, .faqs__q--4--p {
   width: 47vw;
+}
+
+body {
+  background: #E6F6B7;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  width: 100%;
+  color: #01003C;
+  overflow: hidden;
+}
+.tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #F2F2F2;
+  cursor: pointer;
+}
+
+input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 50vh;
+  padding: 1em;
+  overflow-y: scroll;
+  overflow-x: auto;
+  white-space: wrap;
+}
+
+label > h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
 
 .contact {
