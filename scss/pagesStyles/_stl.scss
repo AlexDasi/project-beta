@@ -29,21 +29,92 @@
         }
     }
 
-    &__list{
+    &-list{
         list-style: none;
         display: flex;
-        width: 80vw;
         flex-wrap: wrap;
-        justify-content:flex-start;
-        padding-inline-start: 0px;
-        margin-block-start: 0;
-        margin-block-end: 0;
+        width: 80vw;
 
-        &--1{
-            margin-left: -200px;
+        &__block{
+            padding: 10px;
+            margin-top: -70px;
+
+            &--home{
+                margin: 10px;
+                padding: 0;
+            }
+
+            &--avatar{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            &--img{
+                width: 100%;
+                &--home{
+                    width: 235px;
+                    height: 235px;
+                    overflow: hidden;
+                }
+            }
+
+            &--name, &--tags{
+                padding: 4px;
+                font-size: 14px;
+            }
+        
+            &--name{
+                font-family: $main-font;
+            }
+        
+            &--tags{
+                font-family: $tag-font;
+            }
+
+            &, &--home{
+
+
+                // GRID
+
+
+                @media all and (min-width: 600px)
+                {
+                    width: 50%;
+                }
+    
+                @media all and (min-width: 768px)
+                {
+                    width: 33%;
+                }
+    
+                @media all and (min-width: 992px)
+                {
+                    width: 25%;
+                }
+    
+                @media all and (min-width: 1200px) {
+                    width: 20%;
+                }
+            }
         }
+
+        //STL-HOME
+
+        &--1, &--2, &--3{
+            position: relative;
+
+        }
+        &--1{
+            right: 200px;
+        }
+
         &--2{
-            margin-left: -900px;
+            right: 700px;
+        }
+
+        &--3{
+            right: 400px;
         }
 
         &--home{
@@ -51,47 +122,34 @@
         }
     }
 
-    &__block{
-        margin: 10px;
-        margin-top: -70px;
-        &--home{
-            margin: 10px;
+    &-promotext{
+        display:flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        width: 100%;
+        margin: 20px auto;
+        overflow: hidden;
+
+        &--copy{
+            @include no-margin;
+            width: 100%;
+            display:flex;
+            flex-wrap: nowrap;
+            animation: slide-left 20s linear infinite;
+            @keyframes slide-left {
+                from {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                }
+                to {
+                    -webkit-transform: translateX(-300%);
+                        transform: translateX(-300%);
+                }
+            }
         }
     }
 
-    &__img{
-        width: 235px;
-        height: 235px;
-        object-fit: cover;
-        padding-bottom: 10px;
-
-        &--home{
-            overflow: hidden;
-        }
-    }
-
-    &__name, &__tags{
-        padding: 4px;
-        font-size: 14px;
-    }
-
-    &__name{
-        font-family: $main-font;
-    }
-
-    &__tags{
-        font-family: $tag-font;
-    }
-
-    &__paragraph{
-        margin: 120px 0px 35px 120px;
-    }
-
-    &__promotext{
-        margin-bottom: 120px;
-    }
 }
-
 .intro--text{
     margin: 150px 0px 10px;
     font-size: 24px;
@@ -106,7 +164,7 @@
 
     &>*{
         width: 80vw;
-        margin: 15px 0px 15px 10px;
+        margin: 15px 0px;
     }
 }
 
@@ -116,9 +174,49 @@
     display: block;
 }
 
+//MQUERY
 
+@media all and (max-width: 1200px) {
+
+}
+
+
+
+@media all and (max-width: 992px)
+{
+
+}
+
+@media all and (max-width: 768px)
+{
+
+}
+
+
+@media all and (max-width: 600px)
+{
+    .stl{
+        margin-bottom: 120px;
+        &-paragraph{
+            font-size: $fontbig;
+            margin: 4vh 4vw;
+        }
+        &-list{
+
+            &__block{
+                height: 100%;
+                &--img{
+                    height: 180px;
+                    width: 180px;
+                }
+            }
+        }
+        
+    }
+}
 
 // HEART BUTTON
+
 
 .heart {
     width: 100px;
@@ -131,9 +229,10 @@
 
     //Placement
     position: relative;
-    top: 130px;
-    right: -200px;
-    transform: translate(-50%, -50%);
+    top: 80px;
+    right: -60%;
+
+    //transform: translate(-50%, -50%);
     
     &.is-active {
         transition-duration: 1s;

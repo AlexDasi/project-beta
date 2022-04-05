@@ -6,19 +6,26 @@ fetch('js/camisas.json')
         camisas = data;
 
         camisas.forEach(function (camisa) {
-        document.querySelector('.stl__list--1').innerHTML += 
+        document.querySelector('.stl-list--1').innerHTML += 
             `
-            <li class="stl__block stl__block--home">
-                <img src="${camisa.image}" class= "stl__img stl__img--home" alt="hawaiian shirt">
+            <li class="stl-list__block stl-list__block--home">
+                <img src="${camisa.image}" class= "stl-list__block--img stl-list__block--img--home" alt="hawaiian shirt">
             </li>
             `;
 
-        document.querySelector('.stl__list--2').innerHTML += 
+        document.querySelector('.stl-list--2').innerHTML += 
             `
-            <li class="stl__block stl__block--home">
-                <img src="${camisa.image}" class= "stl__img stl__img--home" alt="hawaiian shirt">
+            <li class="stl-list__block stl-list__block--home">
+                <img src="${camisa.image}" class= "stl-list__block--img stl-list__block--img--home" alt="hawaiian shirt">
             </li>
             `;
+
+        document.querySelector('.stl-list--3').innerHTML += 
+        `
+        <li class="stl-list__block stl-list__block--home">
+            <img src="${camisa.image}" class= "stl-list__block--img stl-list__block--img--home" alt="hawaiian shirt">
+        </li>
+        `;
         }
     )})
 

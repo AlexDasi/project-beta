@@ -22,7 +22,7 @@ include 'phpelements/nav.php'
 
     <main class="stl">
         <div  class="stl__filters"></div>
-        <ul class="stl__list"></ul>
+        <ul class="stl-list"></ul>
     </main>
 
     <footer>

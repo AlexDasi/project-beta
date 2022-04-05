@@ -15,7 +15,7 @@
         margin-bottom: 120px;
 
         &--image{
-            background-image: url("/content/images/about/cover-redux.jpg");
+            background-image: url("../content/images/about/cover-redux.jpg");
             background-color: #cccccc;
             height: 100vw;
 
@@ -82,7 +82,7 @@
         &--img{
             height: auto;
             min-height: 60vh;
-            background-image: url("/content/images/stl/user 3.webp");
+            background-image: url("../content/images/stl/user 3.webp");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -186,7 +186,7 @@
             align-items: center;
             justify-content: center;
             height: 49vw;
-            background-image: url("/content/images/about/sea.jpg");
+            background-image: url("../content/images/about/sea.jpg");
             width: 74vw;
             height: 46vw;
             
@@ -194,7 +194,7 @@
         }
         &--front{
             position: relative;
-            background-image: url("/content/images/about/mountain.jpg");
+            background-image: url("../content/images/about/mountain.jpg");
             width: 50vw;
             height: 23vw;
         }

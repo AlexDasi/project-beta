@@ -1,14 +1,19 @@
             <!--STEAL THE LOOK-->
 <body>
     
-<section>
-    <h2 class="stl__paragraph">Or just steal <br>someone else's</h2>
-    <ul class="stl__list stl__list--1 stl__list--home rellaxH" data-rellax-percentage="-5">
+<section class="stl">
+    <h2 class="stl-paragraph">Or just steal <br>someone else's</h2>
+    <ul class="stl-list stl-list--1 stl-list--home rellaxH" data-rellax-percentage="-5">
     </ul>
-    <ul class="stl__list stl__list--2 stl__list--home rellaxH" data-rellax-percentage="5">
+    <ul class="stl-list stl-list--2 stl-list--home rellaxH" data-rellax-percentage="5">
     </ul>
-    <h3 class="stl__promotext">FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA // FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION/@CAMISOLA/</h3>
+    <ul class="stl-list stl-list--3 stl-list--home rellaxH desktopHidden" data-rellax-percentage="5">
+    </ul>
+    <section class="stl-promotext">
+        <h3 class="stl-promotext--copy">FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA // FOLLOW US ON INSTAGRAM FOR MORE INSPIRATION // @CAMISOLA //</h3>
+    </section>
 </section>
+
 
 <script src="js/stl-home.js"></script>
 

@@ -1,1 +1,14 @@
-@media only screen and (min-width: 1024px){}
+@media all and (max-width: 600px){
+    .mobileHidden{
+    display: none;
+  }
+}
+
+
+
+  @media all and (min-width: 600px){
+    .desktopHidden{
+    display: none;
+  }
+}
+

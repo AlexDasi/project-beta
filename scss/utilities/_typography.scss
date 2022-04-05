@@ -14,22 +14,22 @@ h1{
     font-size: $fontbig;
 }
 
-h2, .intro__text--paragraph{
-    font-size: 56px;
+h2{
+    font-size: 4vw;
 }
 
 h3{
-    font-size: 52px; 
+    font-size: $hmedium; 
 }
 
 h4{
-    font-size: 40px;
+    font-size: 5.5vw;
 }
 
 h5{
     text-transform: none;
     text-align: right;
-    font-size: 55px;
+    font-size: 7vw;
 }
 
 .h2-mobile{
@@ -37,7 +37,7 @@ h5{
 }
 
 .p-small{
-    font-size: 20px;
+    font-size: $psmall;
 }
 
 .p-medium{
@@ -65,4 +65,30 @@ h5{
 
 .yesevaLarge{
     font-size: $plarge;
+    margin-bottom: 20px;
+}
+
+.intro__text--paragraph{
+    font-size: 5vw;
+}
+
+@media all and (min-width: 1200px){
+
+
+    
+    .intro__text--paragraph{
+        font-size: 60px;
+    }
+
+    .p-small{
+        font-size: $psmall;
+    }
+    
+    .p-medium{
+        font-size: $pmedium;
+    }
+    
+    .p-large{
+        font-size: $plarge;
+    }
 }

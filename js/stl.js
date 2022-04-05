@@ -40,20 +40,20 @@ function changeClass(id) {
 }
 
 function paintProducts(selectedFilter) {
-    document.querySelector('.stl__list').innerHTML = '';
+    document.querySelector('.stl-list').innerHTML = '';
     camisas.forEach(function (camisa) {
         const hasNotFilters = selectedFilter.length === 0;
         const filterIncluded = camisa.tags.some(function(tag) { return selectedFilter.includes(tag) });
         if (hasNotFilters || filterIncluded) {
-            document.querySelector('.stl__list').innerHTML += 
+            document.querySelector('.stl-list').innerHTML += 
             `
-            <li class="stl__block">
-                <div>
+            <li class="stl-list__block">
+                <div class="stl-list__block--avatar">
                     <div id="heart-${camisa.id}" onclick="changeClass(${camisa.id})" class="heart ${favouriteShirts.includes(camisa.id) ? 'is-active' : ''}"></div>  
-                    <img src="${camisa.image}" class= "stl__img" alt="hawaiian shirt">
+                    <img src="${camisa.image}" class= "stl-list__block--img" alt="hawaiian shirt">
                 </div>
-                <p class="stl__name">${camisa.name}</p> 
-                <p class="stl__tags">${camisa.tags.join(",  ")}</p> 
+                <p class="stl-list__block--name">${camisa.name}</p> 
+                <p class="stl-list__block--tags">${camisa.tags.join(",  ")}</p> 
             </li>
             `;
         }

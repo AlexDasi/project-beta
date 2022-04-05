@@ -14,77 +14,77 @@ var activeOption = 'shirt';
 const colors = [
 {
     texture: 'content/images/patterns/1.webp',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
     texture: 'content/images/patterns/2.webp',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/3.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/4.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/5.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/6.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/7.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/8.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/9.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/10.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/11.png',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/12.png',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/13.png',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/14.png',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 {
   texture: 'content/images/patterns/15.jpeg',
-    size: [0.2,0.2,0.2],
+    size: [4,4,4],
     shininess: 0
 },
 

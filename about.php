@@ -28,7 +28,7 @@ include 'phpelements/nav.php'
 ?>
 
 <section class="about__cover">
-    <div class="about__cover--image"  alt="guy in a boat in Hawaii"> </div>
+    <div class="about__cover--image"  alt="shirts in wardrobe"> </div>
     <div class="about__cover--copy">
         <h1>A new <br>way <br>of being yourself</h1>
         
@@ -40,22 +40,22 @@ include 'phpelements/nav.php'
     <div class="about__main">
         <div class="about__main--img" alt="girl with hawaiian shirt"></div>
         <div class="about__main--copy">
-            <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. Viverra sollicitudin scelerisque nam velit ut tempor at. Integer sapien sem sit eu, eget. Nulla velit et ultrices tempus. At lacus, aliquam iaculis posuere facilisi pellentesque lacus, malesuada. </p>
+            <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. Viverra sollicitudin scelerisque nam velit ut tempor at. Integer sapien sem sit eu, eget. Nulla velit et ultrices tempus. At lacus, aliquam iaculis posuere facilisi pellentesque lacus, malesuada. </p>
             <p class="yesevaLarge">Bring a festive boost to your everyday style</p>
         </div>
     </div>
     <div class="about__secondary">
         <div class="about__secondary--div1">
-            <p class="yesevaSmall">A new twist to a classic piece.</p>
-            <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
+            <p class="yesevaLarge">A new twist to a classic piece.</p>
+            <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>
         <div class="about__secondary--div2">
-            <p class="yesevaSmall">Not just for beach parties and dads.</p>
-            <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
+            <p class="yesevaLarge">Not just for beach parties and dads.</p>
+            <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>        
         <div class="about__secondary--div3">
-            <p class="yesevaSmall">Create and share your unique designs.</p>
-            <p class="p-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
+            <p class="yesevaLarge">Create and share your unique designs.</p>
+            <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. </p>
         </div>
     </div>
 </section>
@@ -69,7 +69,7 @@ include 'phpelements/nav.php'
 
     <div class="about__third--content">
         <h3 class="about__third--content--h3">it all started as a simple dream.</h3>
-        <p class="about__third--content--p p-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque totam, doloremque eligendi cum animi laboriosam tenetur quasi illum quidem quas distinctio ipsam sequi similique! Rem sequi hic dolorum quas.</p>
+        <p class="about__third--content--p p-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque totam, doloremque eligendi cum animi laboriosam tenetur quasi illum quidem quas distinctio ipsam sequi similique! Rem sequi hic dolorum quas.</p>
     </div>
 
     <div class="about__third--fl">
