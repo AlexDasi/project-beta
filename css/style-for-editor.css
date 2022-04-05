@@ -1,4 +1,4 @@
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: #01003C;
   font-family: "Yeseva One", cursive;
   font-weight: 300;
@@ -16,16 +16,22 @@ h1 {
   font-size: 15vw;
 }
 
-h2, .intro__text--paragraph {
-  font-size: 56px;
+h2 {
+  font-size: 40px;
 }
 
 h3 {
-  font-size: 52px;
+  font-size: 25px;
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 5.5vw;
+}
+
+h5 {
+  text-transform: none;
+  text-align: right;
+  font-size: 7vw;
 }
 
 .h2-mobile {
@@ -33,7 +39,7 @@ h4 {
 }
 
 .p-small {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .p-medium {
@@ -48,6 +54,59 @@ h4 {
   text-align: center;
 }
 
+.yesevaSmall, .yesevaLarge {
+  color: #01003C;
+  font-family: "Yeseva One", cursive;
+  font-weight: 300;
+  line-height: 75%;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+.yesevaSmall {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.yesevaLarge {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro__text--paragraph {
+  font-size: 5vw;
+}
+
+@media all and (min-width: 1200px) {
+  .intro__text--paragraph {
+    font-size: 60px;
+  }
+
+  .p-small {
+    font-size: 14px;
+  }
+
+  .p-medium {
+    font-size: 24px;
+  }
+
+  .p-large {
+    font-size: 36px;
+  }
+}
+@media all and (min-width: 600px) {
+  h3 {
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -84,6 +143,451 @@ p {
           margin-block-end: 0em;
 }
 
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+header {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vw;
+  max-height: 150vw;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: block;
+}
+
+.intro__text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  height: 100%;
+  margin-left: 20px;
+  margin-block: 2vh;
+  top: 30%;
+  margin-bottom: 120px;
+}
+.intro__text > h1, .intro__text p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.intro__text > h1, .intro__text > p {
+  position: relative;
+}
+.intro__text > p {
+  top: 3vw;
+  left: 6vw;
+  width: 55vw;
+}
+
+.hero {
+  position: absolute;
+  margin-left: 60vw;
+  top: -16vh;
+  width: 30vw;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.fl-header {
+  position: relative;
+  width: 18vw;
+  top: -89vh;
+  left: 49vw;
+  z-index: -1;
+}
+
+@media all and (max-width: 992px) {
+  .fl-header {
+    width: 15vw;
+    top: -39vh;
+  }
+}
+@media all and (max-width: 768px) {
+  .fl-header {
+    width: 15vw;
+    top: -39vh;
+  }
+
+  header {
+    margin-bottom: 80px;
+  }
+}
+@media all and (max-width: 600px) {
+  header {
+    display: block;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    min-height: none;
+    max-height: none;
+    margin-bottom: -300px;
+  }
+
+  .intro__text {
+    position: static !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 20vh 4vw 0 4vw;
+    margin-bottom: 0vh;
+    margin-left: 0;
+  }
+  .intro__text > h1, .intro__text p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+  }
+  .intro__text > h1, .intro__text > p {
+    position: static;
+    margin: 4vh 0;
+  }
+  .intro__text > p {
+    top: 0;
+    left: 0;
+    width: inherit;
+  }
+
+  .fl-header {
+    width: 28vw;
+    top: -117vh;
+    left: 30vw;
+  }
+
+  .hero {
+    width: 100%;
+    z-index: -2;
+    margin: 0;
+    position: static;
+  }
+}
+.CTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #01003C;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: auto;
+}
+.CTA__1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.CTA__1--image, .CTA__1--text {
+  padding: 20px;
+}
+.CTA__1--image {
+  width: 40%;
+  margin: 6vw;
+}
+.CTA__1--text {
+  width: 60%;
+  margin: 0 11vw 0 0;
+}
+.CTA__1--text * {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.CTA__2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../content/images/CTA-bkg.jpg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  height: 80vh;
+}
+.CTA__2--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+}
+.CTA__2--fl {
+  position: relative;
+  top: -177px;
+  width: 30vw;
+  left: 10px;
+}
+
+.color__light {
+  color: #E6F6B7;
+}
+
+.color__white {
+  color: #FFFFFF;
+}
+
+.button {
+  position: relative;
+  top: 10vh;
+  border: none;
+  background-color: #E6F6B7;
+  color: #01003C;
+  padding: 16.5px 36.5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif, 300;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #FFFFFF;
+}
+
+@media all and (max-width: 600px) {
+  .CTA {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #E6F6B7;
+  }
+  .CTA > h2, .CTA p, .CTA a {
+    margin: 4vh 4vw;
+  }
+  .CTA > h2 {
+    font-size: 15vw;
+  }
+  .CTA__1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .CTA__1--image, .CTA__1--text {
+    padding: 20px;
+  }
+  .CTA__1--image {
+    width: 100%;
+    margin: 0;
+    padding: 6vw 6vw 34vw 6vw;
+    background-color: #01003C;
+  }
+  .CTA__1--text {
+    width: 100%;
+    margin: 0;
+  }
+  .CTA__1--text * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+            margin-inline-end: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .CTA__1 > .button {
+    position: relative;
+    top: -71vw;
+  }
+  .CTA__2 {
+    height: 100vh;
+  }
+  .CTA__2--title > .centered-text {
+    font-size: 15vw;
+  }
+  .CTA__2 > .button {
+    position: relative;
+    top: 21vw;
+  }
+}
+.nav {
+  position: fixed;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  font-family: "Yeseva One", cursive;
+  background-color: #E6F6B7;
+  z-index: 10;
+  top: 0;
+  height: auto;
+}
+.nav__left {
+  z-index: 5;
+  width: 80px;
+}
+.nav__left, .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: none;
+}
+.nav--transparent {
+  background-color: transparent;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 10;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #01003C;
+  /* Black fallback color */
+  background-color: #01003C;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 18%;
+  /* 18% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  text-decoration: none;
+  font-size: 9vw;
+  line-height: 75%;
+  font-family: "Yeseva One", cursive;
+  color: #E6F6B7;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #F2F2F2;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+nav > span {
+  color: #01003C;
+}
+
+nav > .spanLight {
+  color: #E6F6B7;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
 body,
 html {
   height: 100%;
@@ -131,8 +635,21 @@ body {
 
 .controls {
   position: absolute;
-  bottom: 0;
   width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .options, .buy {
@@ -189,8 +706,6 @@ body {
 .buy {
   background-color: #01003C;
   color: #E6F6B7;
-  right: 45%;
-  left: 45%;
 }
 .buy:hover {
   background-color: #E6F6B7;
@@ -350,13 +865,15 @@ body {
   }
 
   .options {
-    bottom: 50px;
-    width: 100vw;
+    height: 100vh;
+    width: 80vw;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
-    right: 0px;
+    right: auto;
   }
 
   .option {
@@ -379,276 +896,12 @@ body {
     width: auto;
     pointer-events: none;
   }
-}
-header {
-  display: block;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-height: 100vw;
-  max-height: 150vw;
-  -ms-flex-preferred-size: auto;
-      flex-basis: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 30px;
-}
 
-.intro__text {
-  display: block;
-  width: 80vw;
-  margin-left: 20px;
-  margin-top: 20%;
-  z-index: 2;
-}
-.intro__text > h1, .intro__text p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-}
-.intro__text > p {
-  position: relative;
-  left: 60px;
-  top: 60px;
-  width: 55vw;
-}
-
-.hero {
-  position: absolute;
-  margin-left: 60vw;
-  top: 350px;
-  width: 30vw;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.fl-header {
-  position: relative;
-  width: 22.5vw;
-  top: -244px;
-  left: 277px;
-  z-index: -1;
-}
-
-.CTA {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #01003C;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: auto;
-}
-.CTA__1 {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.CTA__1--image, .CTA__1--text {
-  width: 40vw;
-  padding: 20px;
-}
-.CTA__1--image {
-  margin: 7vw;
-}
-.CTA__1--text {
-  margin: 0 11vw 0 9vw;
-}
-.CTA__1--text * {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.CTA__2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url("../../content/images/CTA-bkg.jpg");
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  height: 80vh;
-}
-.CTA__2--title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 150px;
-}
-.CTA__2--fl {
-  position: relative;
-  top: -177px;
-  width: 30vw;
-  left: 10px;
-}
-
-.color__light {
-  color: #E6F6B7;
-}
-
-.color__white {
-  color: #FFFFFF;
-}
-
-.button {
-  border: none;
-  background-color: #E6F6B7;
-  color: #01003C;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #FFFFFF;
-}
-
-.nav {
-  position: fixed;
-  padding: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  font-family: "Yeseva One", cursive;
-  background-color: #E6F6B7;
-  z-index: 10;
-  top: 0;
-  height: auto;
-}
-.nav__left {
-  z-index: 5;
-  width: 80px;
-}
-.nav__left, .nav__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.nav a {
-  text-decoration: none;
-}
-.nav a:hover {
-  text-decoration: none;
-}
-.nav--transparent {
-  background-color: transparent;
-}
-
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed;
-  /* Stay in place */
-  z-index: 10;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: #01003C;
-  /* Black fallback color */
-  background-color: #01003C;
-  /* Black w/opacity */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 18%;
-  /* 18% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: center;
-  /* Centered text/links */
-  margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  text-decoration: none;
-  font-size: 9vw;
-  line-height: 75%;
-  font-family: "Yeseva One", cursive;
-  color: #E6F6B7;
-  display: block;
-  /* Display block instead of inline */
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #F2F2F2;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-nav > span {
-  color: #01003C;
-}
-
-nav > .spanLight {
-  color: #E6F6B7;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  .buy {
+    width: 160px;
+    position: absolute;
+    top: 74vh;
+    right: auto;
+    left: auto;
   }
 }

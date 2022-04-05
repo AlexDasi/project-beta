@@ -15,11 +15,11 @@ h1{
 }
 
 h2{
-    font-size: 4vw;
+    font-size: $hmedium;
 }
 
 h3{
-    font-size: $hmedium; 
+    font-size: $hsmall; 
 }
 
 h4{
@@ -92,3 +92,16 @@ h5{
         font-size: $plarge;
     }
 }
+
+@media all and (min-width: 600px){
+    h3{
+        font-size: 2vw;
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h1{
+        font-size: 15vw;
+    }
+}
+

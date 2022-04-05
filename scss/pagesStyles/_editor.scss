@@ -35,8 +35,12 @@ body {
 
 .controls {
     position: absolute;
-    bottom: 0;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .options, .buy {
     display: flex;
@@ -82,8 +86,6 @@ body {
 .buy{
     background-color: $dark;
     color: $light;
-    right: 45%;
-    left: 45%;
     &:hover{
         background-color: $light;
         color: $dark;
@@ -190,11 +192,11 @@ body {
     }
 
     .options {
-        bottom: 50px;
-        width: 100vw;
+        height: 100vh;
+        width: 80vw;
+        align-items: flex-end;
         display: flex;
-        position: absolute;
-        right: 0px;
+        right: auto;
     }
     .option {
         margin-bottom: 0px;
@@ -216,6 +218,13 @@ body {
             width: auto;
             pointer-events: none;
         }
+    }
+    .buy{
+        width: 160px;
+        position: absolute;
+        top: 74vh;
+        right: auto;
+        left: auto;
     }
 
 }

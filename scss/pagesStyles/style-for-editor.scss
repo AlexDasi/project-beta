@@ -1,13 +1,14 @@
-@import "utilities/variables";
-@import "utilities/mixins";
-@import "utilities/typography";
-@import "./site";
-@import "htmlelements/editor";
-@import "layout/header";
-@import "layout/body";
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/typography";
+@import "../site";
+
+@import "../layout/header";
+@import "../layout/body";
 //@import "htmlelements/burger";
-@import "layout/nav";
-@import "htmlelements/overlay-menu";
+@import "../layout/nav";
+@import "../htmlelements/overlay-menu";
+@import "editor";
 
 
 

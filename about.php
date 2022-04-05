@@ -36,12 +36,13 @@ include 'phpelements/nav.php'
 </section>
 
 <section>
-    <div class="about__main--h3"><h3>CUSTOM MADE SHIRTS FOR THE YOUNGS IN SPIRIT.</h3></div>
+    <div class="about__main--h2"><h2>CUSTOM MADE SHIRTS FOR THE YOUNGS IN SPIRIT.</h2></div>
     <div class="about__main">
         <div class="about__main--img" alt="girl with hawaiian shirt"></div>
         <div class="about__main--copy">
+            <h2 class="yesevaLarge desktopHidden">Bring a festive boost to your everyday style</h2>
             <p class="p-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque fermentum id aliquet vestibulum, diam gravida faucibus. Viverra sollicitudin scelerisque nam velit ut tempor at. Integer sapien sem sit eu, eget. Nulla velit et ultrices tempus. At lacus, aliquam iaculis posuere facilisi pellentesque lacus, malesuada. </p>
-            <p class="yesevaLarge">Bring a festive boost to your everyday style</p>
+            <h2 class="yesevaLarge mobileHidden">Bring a festive boost to your everyday style</h2>
         </div>
     </div>
     <div class="about__secondary">
@@ -68,7 +69,7 @@ include 'phpelements/nav.php'
 <section class="about__third">
 
     <div class="about__third--content">
-        <h3 class="about__third--content--h3">it all started as a simple dream.</h3>
+        <h2 class="about__third--content--h2">it all started as a simple dream.</h2>
         <p class="about__third--content--p p-medium">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque totam, doloremque eligendi cum animi laboriosam tenetur quasi illum quidem quas distinctio ipsam sequi similique! Rem sequi hic dolorum quas.</p>
     </div>
 

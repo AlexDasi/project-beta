@@ -63,7 +63,7 @@
         background-size: cover;
     }
     &--copy, &--img{
-        margin: 2vw 0;
+        margin: 2vw 2vw;
         width: 35vw;
         height: 70vh;
     }   
@@ -112,7 +112,6 @@
     }
 
     &--title{
-        font-size: 40px;
         margin-top: 40px;
     }
 }
@@ -130,6 +129,7 @@
 
         &__main{
             &--copy, &--img{
+                margin: 0;
                 width: 100%;
 
                 &--img{
@@ -140,7 +140,7 @@
             }   
         }
         &__secondary {
-            margin: 0px 0px 90px 0px;
+            margin: 60px 0px 90px 0px;
         
             &>li{
                 width: 100%;

@@ -1,4 +1,9 @@
 .stl {
+    overflow: hidden;
+    align-items: center;
+    &-paragraph{
+        margin-left: 4vw;
+    }
     &__body{
         justify-content: flex-start;;
     }
@@ -9,7 +14,6 @@
     -ms-flex-pack: center;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
 
     &__filters {
         display: flex;
@@ -110,12 +114,9 @@
         }
 
         &--2{
-            right: 700px;
+            right: 580px;
         }
 
-        &--3{
-            right: 400px;
-        }
 
         &--home{
             flex-wrap: nowrap;
@@ -151,7 +152,7 @@
 
 }
 .intro--text{
-    margin: 150px 0px 10px;
+    margin: 150px 10px 10px;
     font-size: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -184,6 +185,22 @@
 
 @media all and (max-width: 992px)
 {
+    .intro--text>*{
+        margin-left: 10px;
+    }
+    .intro--text h2{
+        font-size: $hmedium;
+    }
+    .stl{
+    
+        align-items: center;
+    }
+    .stl__filters{
+        overflow-x:scroll;
+        white-space:nowrap;
+        width: 100vw;
+        margin-left: 20vw;
+    }
 
 }
 
@@ -201,17 +218,39 @@
             font-size: $fontbig;
             margin: 4vh 4vw;
         }
+
         &-list{
 
             &__block{
-                height: 100%;
+                margin-top: -100px;
+                width: 50%;
                 &--img{
-                    height: 180px;
-                    width: 180px;
+                    height: 100%;
+                    width: 100%;
                 }
+            }
+            &--1{
+                right: 200px;
+            }
+    
+            &--2{
+                right: 700px;
+            }
+    
+            &--3{
+                right: 400px;
             }
         }
         
+    }
+    .intro--text, .stl-list, .stl__filters{
+        width: 100vw;
+        margin: 2vw 2vw;
+    }
+
+    .intro--text{
+        margin-top: 240px;
+        align-items: flex-start;
     }
 }
 

@@ -67,7 +67,7 @@ include 'phpelements/stl-home.php'
             <!--CTA-2-->
 <section class="CTA CTA__2">
     <div class="CTA__2--title">
-        <h3 class="color__white centered-text">Check our <br> shirt editor</h3>
+        <h2 class="color__white centered-text">Check our <br> shirt editor</h2>
         <svg class="CTA__2--fl mobileHidden" width="601" height="205" viewBox="0 0 601 205" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.1624 28.9132C18.0804 19.0964 25.4062 12.4538 36.0676 9.93871C40.0756 8.99494 44.1346 8.89526 48.0982 10.2762C51.7988 11.5613 54.0619 14.4209 54.1546 17.798C54.2425 21.1395 52.1091 24.1545 48.5188 25.6465C47.353 26.1258 46.147 26.5743 44.9125 26.7874C30.6403 29.279 22.7329 38.3479 19.2213 51.7992C18.4136 54.8893 18.39 58.1872 17.9611 61.3857C17.8391 62.2888 17.539 63.1709 17.3236 64.0613C16.4624 63.6718 15.4336 63.4657 14.7575 62.8572C11.0053 59.4881 9.33492 55.0599 8.73714 50.1842C7.7889 42.5242 10.2388 35.5693 13.1624 28.9132Z" fill="white"/>
             <path d="M594.931 168.461C597.458 184.652 590.298 196.121 575.654 201.743C572.536 202.937 569.33 202.868 566.407 200.983C564.196 199.559 563.03 197.448 563.448 194.846C563.847 192.398 565.108 190.67 567.73 189.604C570.029 188.671 571.838 186.575 573.928 185.094C583.551 178.261 585.892 168.801 583.878 157.758C583.75 157.053 583.511 156.35 583.525 155.658C583.544 154.944 583.814 154.231 583.975 153.519C584.688 153.739 585.557 153.778 586.092 154.212C590.842 158.057 593.647 163.104 594.931 168.461Z" fill="white"/>
@@ -88,7 +88,7 @@ include 'phpelements/stl-home.php'
 
         <div class="journalHome__main--copy">
             <div>
-                <h3 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h3>
+                <h2 class="journalHome__main--title">ECO FRIENDLY AND FULLY SUSTAINABLE MATERIALS.</h2>
                 <p class="p-medium journalHome__main--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie ac consequat libero ut. Lacus natoque nam dolor dui. Adipiscing aliquet magna nisl turpis. Adipiscing amet tempus lacus, aliquam, sem lacus nunc. Ullamcorper ultrices a mauris diam, feugiat senectus enim.</p>
                 <a href="">Read more...</a>
             </div>
