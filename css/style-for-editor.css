@@ -2210,7 +2210,7 @@ body {
   .buy {
     width: 160px;
     position: absolute;
-    bottom: 17vh;
+    top: 13vh;
     right: auto;
     left: auto;
   }
