@@ -68,27 +68,28 @@ body {
 }
 
 
-.option:hover {
+.buy, .option:hover {
     border: 2px solid $dark;
     background: $white;
     width: 150px;
 }
-.option.--is-active {
+.buy, .option.--is-active {
     border: 2px solid $dark;
     background-color: $light;
     width: 150px;
     cursor: default;
 }
-.option.--is-active:hover {
+.buy, .option.--is-active:hover {
     border: 2px solid $dark;
     background-color: $white;
 }
 .buy{
+    @include secondary-text;
     background-color: $dark;
     color: $light;
     right: auto;
     left: 50px;
-    &:hover{
+    &:hover, &:active{
         background-color: $light;
         color: $dark;
     }
@@ -195,10 +196,11 @@ body {
 
     .options {
         width: 80vw;
-        align-items: flex-end;
+        position: fixed;
+        bottom: 10vh;
         display: flex;
         right: auto;
-        bottom: 80px;
+        left: auto;
     }
     .option {
         margin-bottom: 0px;
@@ -224,7 +226,7 @@ body {
     .buy{
         width: 160px;
         position: absolute;
-        top: 74vh;
+        bottom: 17vh;
         right: auto;
         left: auto;
     }

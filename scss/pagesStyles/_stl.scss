@@ -1,6 +1,9 @@
 .stl {
     overflow: hidden;
     align-items: center;
+    &-home{
+        align-items: flex-start;
+    }
     &-paragraph{
         margin-left: 4vw;
     }

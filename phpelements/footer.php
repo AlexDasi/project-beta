@@ -41,7 +41,7 @@
         <section class="footer__bottom">
             <div class="footer__bottom--text footerText">
                 <p>Copyright 2022  </p>
-                <a class="footerLink" href="www.alexdasi.com">Alex Dasi</a>
+                <a class="footerLink" href="https://www.alexdasi.com/">Alex Dasi</a>
             </div>
             <div class="footer__bottom--line"></div>
             <div class="footer__bottom--text footerText">

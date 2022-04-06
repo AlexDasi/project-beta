@@ -1,7 +1,7 @@
             <!--STEAL THE LOOK-->
 <body>
     
-<section class="stl">
+<section class="stl stl-home">
     <h2 class="stl-paragraph">Or just steal <br>someone else's</h2>
     <ul class="stl-list stl-list--1 stl-list--home rellaxH" data-rellax-percentage="-5">
     </ul>

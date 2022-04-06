@@ -184,7 +184,7 @@ header {
   height: 100%;
   margin-left: 20px;
   margin-block: 2vh;
-  top: 30%;
+  top: 54vh;
   margin-bottom: 120px;
 }
 .intro__text > h1, .intro__text p {
@@ -704,6 +704,11 @@ nav > .spanLight {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.stl-home {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .stl-paragraph {
   margin-left: 4vw;
@@ -1712,6 +1717,14 @@ label > h5 {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media all and (max-width: 600px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .contact__text, .contact__form {
   height: 100vh;
   display: -webkit-box;
@@ -1743,6 +1756,17 @@ label > h5 {
           flex-direction: column;
   width: 45%;
 }
+@media all and (max-width: 600px) {
+  .contact__text {
+    margin-top: 20vh;
+    width: 80vw;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+.contact__text > h2 {
+  font-size: 40px;
+}
 .contact__form {
   width: 55%;
   display: -webkit-box;
@@ -1759,10 +1783,25 @@ label > h5 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media all and (max-width: 600px) {
+  .contact__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80vw;
+    height: 100%;
+  }
+}
 .contact__form--line {
   display: block;
   position: relative;
   margin-bottom: 42px;
+}
+@media all and (max-width: 600px) {
+  .contact__form--line {
+    margin-bottom: 5px;
+  }
 }
 .contact__form--line > label {
   color: #01003C;
@@ -1773,7 +1812,12 @@ label > h5 {
   font-size: 1vw;
   display: block;
 }
+.contact__form--line > label > h3 {
+  text-transform: none;
+}
 .contact__form--line > input, .contact__form--line > textarea {
+  opacity: 1;
+  z-index: 1;
   position: relative;
   display: block;
   width: 100%;
@@ -1797,6 +1841,12 @@ label > h5 {
 .cf--right {
   margin-left: 3vw;
 }
+@media all and (max-width: 600px) {
+  .cf--right {
+    margin-left: 0;
+    margin-top: 4vh;
+  }
+}
 
 :focus-visible {
   border-style: none;
@@ -1814,6 +1864,24 @@ label > h5 {
 
 :focus {
   outline: none;
+}
+
+#email, #firstname, #lastname, #phone {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 0;
+  line-height: 1.75;
+  background-color: #E6F6B7;
+  border-style: none;
+  border: 2px rgba(1, 0, 61, 0.5);
+  border-bottom-style: solid;
+}
+#email:focus, #email:hover, #email:active, #firstname:focus, #firstname:hover, #firstname:active, #lastname:focus, #lastname:hover, #lastname:active, #phone:focus, #phone:hover, #phone:active {
+  border-style: none;
+  border: 2px #01003C;
+  border-bottom-style: solid;
 }
 
 @media all and (max-width: 600px) {

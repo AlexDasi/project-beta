@@ -13,7 +13,7 @@ fetch('js/journal-home.json')
                 <p class="journalHome__secondary--footer">${journal.footer}</p>
                 <h3 class="journalHome__secondary--title">${journal.h3}</h3>
                 <p class="journalHome__secondary--text">${journal.text}</p>
-                <a href="">Read more...</a>
+                <a href="journal.php">Read more...</a>
                 
             </li>
             `;

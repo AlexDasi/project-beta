@@ -14,10 +14,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Camisola editor</title>
+    <title>Editor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300;400&family=Yeseva+One&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-for-editor.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -33,7 +35,7 @@ include 'phpelements/nav.php'
 
 
     <!-- These toggle the the different parts of the chair that can be edited, note data-option is the key that links to the name of the part in the 3D file -->
-    <button class="buy option">BUY 19.90€</button>
+    <div class="buy">BUY 19.90€</div>
     <div class="options">
 
         <div class="option --is-active" data-option="shirt">
