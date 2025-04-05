@@ -123,7 +123,7 @@ include 'phpelements/stl-home.php'
     <script>
   //Enable Horizontal Parallax Scrolling
         var rellaxH = new Rellax('.rellaxH', {
-            horizontal:true
+            horizontal:true,
             vertical:false
         });
     </script>
