@@ -52,6 +52,9 @@ include 'phpelements/nav.php'
         </div>
     </div>
 
+    <!-- Loading indicator -->
+    <div id="js-loader" class="loader">Loading...</div>
+
     <!-- Just a quick notice to the user that it can be interacted with -->
     <span class="drag-notice" id="js-drag-notice">Drag to rotate 360&#176;</span>
 
