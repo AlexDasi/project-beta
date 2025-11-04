@@ -66,14 +66,14 @@ include 'phpelements/nav.php'
         <div id="js-tray-slide" class="tray__slide"></div>
     </div>
     
-  <!-- Cargar Three.js y sus extensiones desde CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/controls/OrbitControls.js"></script>
+  <!-- Three.js Core r127 (stable version for this project) -->
+  <script src="https://unpkg.com/three@0.127.0/build/three.js"></script>
+  
+  <!-- Three.js Loaders and Controls (r127 compatible) -->
+  <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r127/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r127/examples/js/controls/OrbitControls.js"></script>
 
-  <!-- Cargar tu script personalizado -->
-  <script src="editor.js"></script>
-
-    <script src="js/editor.js"></script>
+  <!-- Editor script -->
+  <script src="js/editor.js"></script>
 </body>
 </html>
