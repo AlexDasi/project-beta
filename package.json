@@ -1,4 +1,7 @@
 {
+  "overrides": {
+    "picomatch": "^2.3.2"
+  },
   "dependencies": {
     "axios": "^0.26.1",
     "jquery": "^3.6.0",
