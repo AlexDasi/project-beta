@@ -112,7 +112,7 @@ include 'phpelements/stl-home.php'
 
     <script src="js/overlay-menu.js"></script>        
     <script src="js/journal-home.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     
     <script src="node_modules/rellax/rellax.min.js"></script>
