@@ -12,142 +12,58 @@ var cameraFar = 5;
 var activeOption = 'shirt';
 
 const colors = [
-{
-    texture: 'content/images/patterns/1.webp',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-    texture: 'content/images/patterns/2.webp',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/3.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/4.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/5.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/6.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/7.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/8.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/9.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/10.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/11.png',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/12.png',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/13.png',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/14.png',
-    size: [4,4,4],
-    shininess: 0
-},
-{
-  texture: 'content/images/patterns/15.jpeg',
-    size: [4,4,4],
-    shininess: 0
-},
+  { texture: 'content/images/patterns/1.webp',  size: [4,4,4], shininess: 0, name: 'Hibiscus Night'    },
+  { texture: 'content/images/patterns/2.webp',  size: [4,4,4], shininess: 0, name: 'Tropicana'         },
+  { texture: 'content/images/patterns/3.jpeg',  size: [4,4,4], shininess: 0, name: 'Pink Hibiscus'     },
+  { texture: 'content/images/patterns/4.jpeg',  size: [4,4,4], shininess: 0, name: 'Coral Garden'      },
+  { texture: 'content/images/patterns/5.jpeg',  size: [4,4,4], shininess: 0, name: 'Pacific Bloom'     },
+  { texture: 'content/images/patterns/6.jpeg',  size: [4,4,4], shininess: 0, name: 'Red Jungle'        },
+  { texture: 'content/images/patterns/7.jpeg',  size: [4,4,4], shininess: 0, name: 'Blue Lagoon'       },
+  { texture: 'content/images/patterns/8.jpeg',  size: [4,4,4], shininess: 0, name: 'Sunset Palms'      },
+  { texture: 'content/images/patterns/9.jpeg',  size: [4,4,4], shininess: 0, name: 'Forest Floor'      },
+  { texture: 'content/images/patterns/10.jpeg', size: [4,4,4], shininess: 0, name: 'Maui Leaves'       },
+  { texture: 'content/images/patterns/11.png',  size: [4,4,4], shininess: 0, name: 'Kona Coast'        },
+  { texture: 'content/images/patterns/12.png',  size: [4,4,4], shininess: 0, name: 'Plumeria White'    },
+  { texture: 'content/images/patterns/13.png',  size: [4,4,4], shininess: 0, name: 'Tiki Dusk'         },
+  { texture: 'content/images/patterns/14.png',  size: [4,4,4], shininess: 0, name: 'Monstera Dark'     },
+  { texture: 'content/images/patterns/15.jpeg', size: [4,4,4], shininess: 0, name: 'Waikiki Floral'    },
+  // Variantes de tiling
+  { texture: 'content/images/patterns/3.jpeg',  size: [2,2,2], shininess: 0, name: 'Pink Hibiscus XL'  },
+  { texture: 'content/images/patterns/6.jpeg',  size: [2,2,2], shininess: 0, name: 'Red Jungle XL'     },
+  { texture: 'content/images/patterns/1.webp',  size: [6,6,6], shininess: 0, name: 'Hibiscus Night SM' },
+  { texture: 'content/images/patterns/8.jpeg',  size: [3,3,3], shininess: 0, name: 'Sunset Palms MD'   },
+  { texture: 'content/images/patterns/2.webp',  size: [6,6,6], shininess: 0, name: 'Tropicana SM'      },
+  { texture: 'content/images/patterns/11.png',  size: [3,3,3], shininess: 0, name: 'Kona Coast MD'     },
+  { texture: 'content/images/patterns/4.jpeg',  size: [2,2,2], shininess: 0, name: 'Coral Garden XL'   },
+  { texture: 'content/images/patterns/12.png',  size: [2,2,2], shininess: 0, name: 'Plumeria White XL' },
+  { texture: 'content/images/patterns/7.jpeg',  size: [2,2,2], shininess: 0, name: 'Blue Lagoon XL'    },
+  { texture: 'content/images/patterns/14.png',  size: [3,3,3], shininess: 0, name: 'Monstera Dark MD'  },
+  { texture: 'content/images/patterns/5.jpeg',  size: [2,2,2], shininess: 0, name: 'Pacific Bloom XL'  },
+  { texture: 'content/images/patterns/9.jpeg',  size: [3,3,3], shininess: 0, name: 'Forest Floor MD'   },
+  { texture: 'content/images/patterns/10.jpeg', size: [2,2,2], shininess: 0, name: 'Maui Leaves XL'    },
+  { texture: 'content/images/patterns/13.png',  size: [2,2,2], shininess: 0, name: 'Tiki Dusk XL'      },
+  { texture: 'content/images/patterns/1.webp',  size: [2,2,2], shininess: 0, name: 'Hibiscus Night XL' },
+  { texture: 'content/images/patterns/2.webp',  size: [3,3,3], shininess: 0, name: 'Tropicana MD'      },
+  { texture: 'content/images/patterns/3.jpeg',  size: [6,6,6], shininess: 0, name: 'Pink Hibiscus SM'  },
+];
 
-{
-    color: 'acb4b9'  
-},
-{
-    color: 'DF9998',
-},
-{
-    color: '7C6862'
-},
-{
-    color: 'A3AB84'
-},
-{
-    color: 'D6CCB1'
-},
-{
-    color: 'F8D5C4'
-},
-{
-    color: 'A3AE99'
-},
-{
-    color: 'EFF2F2'
-},
-{
-    color: 'B0C5C1'
-},
-{
-    color: '8B8C8C'
-},
-{
-    color: '565F59'
-},
-{
-    color: 'CB304A'
-},
-{
-  color: 'EFF2F2'
-},
-{
-  color: 'B0C5C1'
-},
-{
-  color: '8B8C8C'
-},
-{
-  color: '565F59'
-},
-{
-  color: 'CB304A'
-},
-
-]
+const buttonColors = [
+  { color: 'FAFAF8', shininess: 30, name: 'Pearl White'  },
+  { color: 'EDE0C4', shininess: 20, name: 'Ivory'        },
+  { color: 'D4B895', shininess: 15, name: 'Natural'      },
+  { color: 'C19A6B', shininess: 10, name: 'Tan'          },
+  { color: '8B6F5E', shininess: 10, name: 'Warm Brown'   },
+  { color: '6B7280', shininess: 20, name: 'Slate'        },
+  { color: '01003C', shininess: 50, name: 'Navy'         },
+  { color: '1A1A1A', shininess: 60, name: 'Jet Black'    },
+];
 
 const BACKGROUND_COLOR = 0xf1f1f1;
 
 // Init the scene
 const scene = new THREE.Scene();
 // Set background
-scene.background = new THREE.Color(BACKGROUND_COLOR );
+scene.background = new THREE.Color(BACKGROUND_COLOR);
 scene.fog = new THREE.Fog(BACKGROUND_COLOR, 20, 100);
 
 const canvas = document.querySelector('#c');
@@ -201,6 +117,16 @@ loader.load(MODEL_PATH, function(gltf) {
   
   scene.add(theModel);
 
+  // Aplicar textura hawaiana aleatoria al cargar
+  const textureIndices = colors.reduce((acc, c, i) => c.texture ? [...acc, i] : acc, []);
+  const randomIdx = textureIndices[Math.floor(Math.random() * textureIndices.length)];
+  setMaterial(theModel, 'shirt', buildMaterial(colors[randomIdx]));
+
+  // Marcar ese swatch como activo por defecto
+  activeSwatchMap['shirt'] = randomIdx;
+  const defaultSwatch = TRAY.querySelector('[data-key="' + randomIdx + '"]');
+  if (defaultSwatch) defaultSwatch.classList.add('--is-active');
+
   // Remove the loader
   LOADER.remove();
 
@@ -237,7 +163,7 @@ var dirLight = new THREE.DirectionalLight( 0xffffff, 0.54 );
 // Floor
 var floorGeometry = new THREE.PlaneGeometry(5000, 5000, 1, 1);
 var floorMaterial = new THREE.MeshPhongMaterial({
-  color: 0xeeeeee, // This color is manually dialed in to match the background color
+  color: 0xeeeeee,
   shininess: 0
 });
 
@@ -297,79 +223,93 @@ function resizeRendererToDisplaySize(renderer) {
 // Disable scrolling .. (??)
 window.onscroll = function () { window.scrollTo(0, 0); };
 
-// Function - Build Colors
+// Function - Build Swatches
+let currentColors = colors;
+const activeSwatchMap = {};
 
-function buildColors(colors) {
-  for (let [i, color] of colors.entries()) {
+function buildSwatches(arr) {
+  currentColors = arr;
+  TRAY.innerHTML = '';
+  for (let [i, color] of arr.entries()) {
     let swatch = document.createElement('div');
     swatch.classList.add('tray__swatch');
-    
-    if (color.texture)
-    {
-      swatch.style.backgroundImage = "url(" + color.texture + ")";   
-    } else
-    {
+    if (color.texture) {
+      swatch.style.backgroundImage = "url(" + color.texture + ")";
+      swatch.style.backgroundSize = Math.round((4 / color.size[0]) * 100) + '%';
+    } else {
       swatch.style.background = "#" + color.color;
     }
-
     swatch.setAttribute('data-key', i);
+    if (color.name) swatch.setAttribute('data-name', color.name);
+    swatch.addEventListener('mouseenter', () => updateSwatchLabel(arr[i].name || ''));
+    swatch.addEventListener('mouseleave', () => {
+      const savedKey = activeSwatchMap[activeOption];
+      updateSwatchLabel(savedKey != null ? (currentColors[savedKey].name || '') : '');
+    });
     TRAY.append(swatch);
+  }
+  // Restore active swatch for current option
+  const savedKey = activeSwatchMap[activeOption];
+  if (savedKey != null) {
+    const sw = TRAY.querySelector('[data-key="' + savedKey + '"]');
+    if (sw) sw.classList.add('--is-active');
   }
 }
 
-buildColors(colors);
+buildSwatches(colors);
+
+// Swatch click — event delegation
+TRAY.addEventListener('click', (e) => {
+  const swatch = e.target.closest('.tray__swatch');
+  if (!swatch) return;
+  const key = parseInt(swatch.dataset.key);
+  const color = currentColors[key];
+  setMaterial(theModel, activeOption, buildMaterial(color));
+  updateSwatchLabel(color.name || '');
+  TRAY.querySelectorAll('.tray__swatch').forEach(s => s.classList.remove('--is-active'));
+  swatch.classList.add('--is-active');
+  activeSwatchMap[activeOption] = key;
+});
 
 // Select Option
 const options = document.querySelectorAll(".option");
 
 for (const option of options) {
-  option.addEventListener('click',selectOption);
+  option.addEventListener('click', selectOption);
 }
 
 function selectOption(e) {
-  let option = e.target;
-  activeOption = e.target.dataset.option;
+  let option = e.currentTarget;
+  if (option.classList.contains('--is-active')) return;
+  activeOption = option.dataset.option;
   for (const otherOption of options) {
     otherOption.classList.remove('--is-active');
   }
   option.classList.add('--is-active');
+  buildSwatches(activeOption === 'button' ? buttonColors : colors);
 }
 
-// Swatches
-const swatches = document.querySelectorAll(".tray__swatch");
 
-for (const swatch of swatches) {
-  swatch.addEventListener('click', selectSwatch);
+
+function buildMaterial(color) {
+  if (color.texture) {
+    let txt = new THREE.TextureLoader().load(color.texture);
+    txt.repeat.set(color.size[0], color.size[1], color.size[2]);
+    txt.wrapS = THREE.RepeatWrapping;
+    txt.wrapT = THREE.RepeatWrapping;
+    return new THREE.MeshPhongMaterial({
+      map: txt,
+      shininess: color.shininess ? color.shininess : 10
+    });
+  } else {
+    return new THREE.MeshPhongMaterial({
+      color: parseInt('0x' + color.color),
+      shininess: color.shininess ? color.shininess : 10
+    });
+  }
 }
 
-function selectSwatch(e) {
-     let color = colors[parseInt(e.target.dataset.key)];
-     let new_mtl;
 
-    if (color.texture) {
-      
-      let txt = new THREE.TextureLoader().load(color.texture);
-      
-      txt.repeat.set( color.size[0], color.size[1], color.size[2]);
-      txt.wrapS = THREE.RepeatWrapping;
-      txt.wrapT = THREE.RepeatWrapping;
-      
-      new_mtl = new THREE.MeshPhongMaterial( {
-        map: txt,
-        shininess: color.shininess ? color.shininess : 10
-      });    
-    } 
-    else
-    {
-      new_mtl = new THREE.MeshPhongMaterial({
-          color: parseInt('0x' + color.color),
-          shininess: color.shininess ? color.shininess : 10
-          
-        });
-    }
-    
-    setMaterial(theModel, activeOption, new_mtl);
-}
 
 function setMaterial(parent, type, mtl) {
   parent.traverse((o) => {
@@ -391,6 +331,27 @@ if (initRotate <= 120) {
   } else {
     loaded = true;
   }
+}
+
+// Reset button
+const RESET_BTN = document.getElementById('js-reset');
+const INITIAL_MTL_RESET = new THREE.MeshPhongMaterial({ color: 0xf1f1f1, shininess: 10 });
+if (RESET_BTN) {
+  RESET_BTN.addEventListener('click', () => {
+    setMaterial(theModel, 'shirt', INITIAL_MTL_RESET);
+    setMaterial(theModel, 'button', INITIAL_MTL_RESET);
+    Object.keys(activeSwatchMap).forEach(k => { activeSwatchMap[k] = null; });
+    TRAY.querySelectorAll('.tray__swatch').forEach(s => s.classList.remove('--is-active'));
+    updateSwatchLabel('');
+  });
+}
+
+// Swatch label
+const SWATCH_LABEL = document.getElementById('js-swatch-label');
+function updateSwatchLabel(name) {
+  if (!SWATCH_LABEL) return;
+  SWATCH_LABEL.textContent = name;
+  SWATCH_LABEL.classList.toggle('--visible', !!name);
 }
 
 var slider = document.getElementById('js-tray'), sliderItems = document.getElementById('js-tray-slide'), difference;

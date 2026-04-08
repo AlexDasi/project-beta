@@ -41,16 +41,24 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    overflow: visible;
 }
-.options, .buy {
+.options {
     display: flex;
     position: absolute;
     right: 50px;
-    bottom: 100px;
+    bottom: 100%;
+    margin-bottom: 10px;
+}
+.buy {
+    display: flex;
+    position: absolute;
+    right: auto;
+    left: 50px;
+    bottom: 100%;
+    margin-bottom: 10px;
 }
 .option, .buy {
-    margin: -1px;
-    border: 2px solid $dark;
     background-color: $light-grey;
     margin-bottom: 3px;
     padding: 10px;
@@ -67,21 +75,23 @@ body {
     }
 }
 
-
-.buy, .option:hover {
-    border: 2px solid $dark;
-    background: $white;
-    width: 150px;
+.option {
+    border: none;
+    background-color: $light-grey;
 }
-.buy, .option.--is-active {
-    border: 2px solid $dark;
+.option:hover {
+    background: $white;
+}
+.option.--is-active {
     background-color: $light;
-    width: 150px;
     cursor: default;
 }
-.buy, .option.--is-active:hover {
-    border: 2px solid $dark;
+.option.--is-active:hover {
     background-color: $white;
+}
+.buy {
+    border: 1px solid $dark;
+    width: 150px;
 }
 .buy{
     @include secondary-text;
@@ -89,6 +99,7 @@ body {
     color: $light;
     right: auto;
     left: 50px;
+    transition: background-color 0.2s ease, color 0.2s ease;
     &:hover, &:active{
         background-color: $light;
         color: $dark;
@@ -96,6 +107,15 @@ body {
 }
 .option svg {
     pointer-events: none;
+}
+.option:focus, .option:focus-visible {
+    outline: none;
+    border: none;
+}
+@media (max-width: 680px) {
+    .option svg path {
+        fill: currentColor;
+    }
 }
 .info {
     padding: 0 1em;
@@ -105,9 +125,55 @@ body {
 .info p {
     margin-top: 0;
 }
+.tray-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tray-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 4px;
+    height: 24px;
+}
+
+.swatch-label {
+    font-family: $tag-font;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $dark;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+
+    &.--visible {
+        opacity: 1;
+    }
+}
+
+.reset-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: $dark;
+    opacity: 0.4;
+    line-height: 0;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+        transform: rotate(-180deg);
+    }
+}
+
 .tray {
     width: 100%;
-    height: 50px;
+    height: 65px;
+    padding-top: 8px;
     position: relative;
     overflow-x: hidden;
 }
@@ -119,13 +185,27 @@ body {
   animation: wheelin 1s 2s ease-in-out forwards; */
 }
 .tray__swatch {
-    transition: 0.1s ease-in;
-    height: 50px;
-    min-width: 50px;
+    transition: box-shadow 0.15s ease, outline 0.15s ease;
+    height: 65px;
+    min-width: 65px;
     flex: 1;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     background-size: 300px;
     background-position: center;
+    cursor: pointer;
+    transform-origin: bottom center;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+
+    &:hover {
+        box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4);
+        outline: 2px solid $dark;
+    }
+
+    &.--is-active {
+        outline: 2px solid $dark;
+        box-shadow: inset 0 0 0 2px $light, 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
 }
 .tray__swatch:nth-child(5n+5) {
     margin-right: 20px;
@@ -188,47 +268,92 @@ body {
 @media (max-width: 680px) {
     .info {
         padding: 1em 2em;
-
-        &__message {
-            display: none;
-        }
+        &__message { display: none; }
     }
 
+    .controls {
+        align-items: stretch;
+        overflow: visible;
+    }
+
+    // Toggle pill segmentado
     .options {
-        width: 80vw;
-        position: fixed;
-        bottom: 10vh;
-        display: flex;
-        right: auto;
-        left: auto;
+        position: static;
+        width: 100%;
+        margin-bottom: 0;
+        background: $dark;
+        border: none;
+        gap: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     .option {
-        margin-bottom: 0px;
-        padding: 5px;
-        height: 45px;
-        width: 50%;
-        display: flex;
+        margin: 0;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: rgba($white, 0.5);
+        height: 40px;
+        flex: 1;
+        width: auto;
+        border-radius: 0;
+        transition: background 0.2s ease, color 0.2s ease;
+        font-size: 12px;
+
+        & p { color: inherit; margin: 0; }
+        & svg path { fill: currentColor; }
 
         &:hover {
-            width: 50%;
-            }
+            background: rgba($white, 0.1);
+            color: $white;
+            width: auto;
+        }
 
         &.--is-active {
-            width: 50%;
-        }
-
-        & svg {
-            height: 100%;
+            background: $light;
+            color: $dark;
             width: auto;
-            pointer-events: none;
+            cursor: default;
+            & p { color: $dark; }
+            & svg path { fill: $dark; }
+        }
+
+        &.--is-active:hover {
+            background: $light;
+            width: auto;
         }
     }
-    .buy{
-        width: 160px;
-        position: absolute;
-        top: 13vh;
-        right: auto;
-        left: auto;
+
+    // Ocultar topbar: elimina el hueco entre las tabs y los swatches
+    .tray-topbar {
+        display: none;
     }
 
+    // Label flota sobre el canvas, esquina inferior derecha
+    .swatch-label {
+        position: fixed;
+        bottom: calc(65px + 8px + 40px + 12px); // tray + options + margen
+        right: 16px;
+        left: auto;
+        background: rgba($dark, 0.82);
+        color: $light;
+        padding: 4px 10px;
+        border-radius: 2px;
+        font-size: 10px;
+
+        &.--visible {
+            opacity: 1;
+        }
+    }
+
+    .buy {
+        width: 160px;
+        position: fixed;
+        bottom: calc(65px + 40px + 20px); // tray + options + margen
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+    }
 }
